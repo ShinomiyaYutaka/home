@@ -149,13 +149,20 @@ body {
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
-.content {
-    opacity: 0;
+.loading {
+    position: fixed;
+    background-color: #fff;
+    opacity: 1;
     transition: opacity 1s;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
 }
 
-.content.loaded_e {
-    opacity: 1;
+.loading.loaded_e {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 900;
 }
 
 .logo {
