@@ -110,7 +110,7 @@ function check() {
         return false; // 送信を中止
     }
 }
-function send() {
+$('.hidden_iframe').onload = function() {
     if (submitted) {
         submitted = false;
         document.input_form.reset();
