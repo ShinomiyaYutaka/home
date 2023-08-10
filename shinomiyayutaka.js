@@ -23,7 +23,7 @@ $(window).on('load', function () {
     }
     enterLoad();
     setTimeout(() => {
-        $('.content').addClass('loaded_e');
+        $('.loading').addClass('loaded_e');
     }, 1200);
     setTimeout(() => {
         menuChange(menus[menumode]);
