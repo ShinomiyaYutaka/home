@@ -110,13 +110,13 @@ function check() {
         return false; // 送信を中止
     }
 }
-$('.hidden_iframe').onload = function() {
+$('.hidden_iframe').on('load', function() {
     if (submitted) {
         submitted = false;
         document.input_form.reset();
         $('.dialog_contact').addClass('show');
     }
-}
+});
 
 function loadAnim(className, time) {
     let timeId = setTimeout(function () {
