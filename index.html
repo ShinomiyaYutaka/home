@@ -570,25 +570,6 @@
 		<!-- Contact -->
 		<div class="contact_content Contact">
 			<div>
-				<script type="text/javascript">
-					let submitted = false;
-					function check() {
-						if (window.confirm('送信してよろしいですか？')) { // 確認ダイアログを表示
-							submitted = true;
-							return true; // 「OK」時は送信を実行
-						}
-						else { // 「キャンセル」時の処理
-							return false; // 送信を中止
-						}
-					}
-					function send() {
-						if (submitted) {
-							submitted = false;
-							document.input_form.reset();
-							$('.dialog_contact').addClass('show');
-						}
-					}
-				</script>
 				<iframe name="hidden_iframe" class="hidden_iframe" onload="send()"></iframe>
 				<form name="input_form"
 					action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScFcfkf_a9w40Rr6nuQIDoydoBye75PtG5jzQGwY7a3QrPfHw/formResponse"
