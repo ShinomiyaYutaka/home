@@ -100,12 +100,21 @@ $('input').on("keydown", function (e) {
     }
 });
 
+let submitted = false;
 function check() {
     if (window.confirm('送信してよろしいですか？')) { // 確認ダイアログを表示
+        submitted = true;
         return true; // 「OK」時は送信を実行
     }
     else { // 「キャンセル」時の処理
         return false; // 送信を中止
+    }
+}
+function send() {
+    if (submitted) {
+        submitted = false;
+        document.input_form.reset();
+        $('.dialog_contact').addClass('show');
     }
 }
 
