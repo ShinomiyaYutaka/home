@@ -75,7 +75,7 @@ $('.content_block_pad').on('click', function () {
         window.open(this.dataset.url, '_blank');
         return false;
     }
-    window.open('https://shinomiyayutaka.github.io/comic1/comic_one/comic/index.html', '_self');
+    window.open('https://shinomiyayutaka.github.io/comic1/comic_one/comic/', '_self');
 });
 
 $('.btn_gmail_copy').on('click', function () {
