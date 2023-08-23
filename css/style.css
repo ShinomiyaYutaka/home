@@ -274,7 +274,7 @@ Main
     background-color: #303030;
     font-size: 1.4vw;
     color: #f0f0f0;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     border-radius: 0.6vw 0.6vw 0 0;
 }
@@ -286,7 +286,7 @@ Main
 
 .news>p {
     color: #303030;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     margin: 0 0 0 1vw;
 }
@@ -359,7 +359,7 @@ About
     background-color: #303030;
     font-size: 1.4vw;
     color: #f0f0f0;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     border-radius: 0.6vw 0.6vw 0 0;
 }
@@ -381,7 +381,7 @@ About
     text-align: center;
     font-size: 1.4vw;
     color: #f0f0f0;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
 }
 
@@ -392,7 +392,7 @@ About
     transform: translate(5.5vw, -50%);
     font-size: 1.4vw;
     color: #303030;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
 }
 
@@ -403,7 +403,7 @@ About
 .about_box_can>p {
     font-size: 1vw;
     color: #303030;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     margin: 0 0 0 1vw;
 }
@@ -528,7 +528,7 @@ Character
     z-index: 3;
     transform: skewX(15deg);
     color: #fff;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 900;
     white-space: nowrap;
     font-size: 7.2vw;
@@ -604,7 +604,7 @@ Character
     position: absolute;
     font-size: 1.6vw;
     color: #303030;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     top: 52%;
     left: 4%;
@@ -1149,14 +1149,14 @@ Work
     background-color: #303030;
     font-size: 1.4vw;
     color: #f0f0f0;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     border-radius: 0.6vw 0.6vw 0 0;
 }
 
 .works>p {
     color: #303030;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     margin: 0 0 0 1vw;
 }
@@ -1241,7 +1241,7 @@ Contact
     background-color: #303030;
     font-size: 1vw;
     color: #f0f0f0;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     border-radius: 0.6vw 0.6vw 0 0;
 }
@@ -1260,7 +1260,7 @@ Contact
     left: 50%;
     transform: translate(-50%, 0);
     margin: 0% 0;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     color: #303030;
 }
@@ -1291,7 +1291,7 @@ Contact
     position: absolute;
     font-size: 1vw;
     color: #fa4a84;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     background-color: #f0f0f0;
     border: #303030 3px solid;
@@ -1325,7 +1325,7 @@ Contact
 .contact_exp > p {
     margin: 0;
     color: #303030;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     font-size: 0.8vw;
 }
@@ -1339,7 +1339,7 @@ Contact
     width: 60%;
     margin: 11px 0px 8px 0;
     color: #303030;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     font-size: 0.8vw;
 }
