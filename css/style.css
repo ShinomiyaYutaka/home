@@ -52,6 +52,10 @@ body {
     opacity: 1;
 }
 
+.enter_open {
+    display: none;
+}
+
 .enter_bg {
     top: 0.3vw;
     left: -1.2vw;
@@ -194,25 +198,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.bg_chara {
-    position: absolute;
-    width: 40%;
-    height: auto;
-    top: 22%;
-    left: 12vw;
-    transition: top 0.4s, opacity 0.4s;
-    opacity: 0;
-}
-
-.bg_chara>img {
-    width: 100%;
-}
-
-.bg_chara.loaded {
-    top: 10%;
-    opacity: 1;
-}
-
 /*
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -252,7 +237,7 @@ Main
     padding: 1vw;
     border: 3px solid;
     border-radius: 0.78125vw;
-    background-color: #ffffff70;
+    background-color: #f0f0f0;
     box-shadow: 14px 14px 0px 0 #f0a5c2;
     opacity: 0;
     transition: opacity 0.4s, transform 0.4s;
@@ -313,6 +298,25 @@ Main
 .main_box_text {
     font-size: 1vw;
     margin: 0 0 0 2vw;
+}
+
+.bg_chara {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top: 22%;
+    left: 12vw;
+    transition: top 0.4s, opacity 0.4s;
+    opacity: 0;
+}
+
+.bg_chara>img {
+    width: 100%;
+}
+
+.bg_chara.loaded {
+    top: 10%;
+    opacity: 1;
 }
 
 /*
@@ -1099,6 +1103,91 @@ Link
     width: 42%;
     transform: translate(-50%, 0);
     cursor: pointer;
+}
+
+/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Work
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+.work_box_wrap {
+    position: absolute;
+    top: 10%;
+    left: 16%;
+}
+
+.work_box_wrap {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+.work_box {
+    position: relative;
+    width: 26vw;
+    padding-bottom: 1vw;
+    border: #303030 3px solid;
+    box-shadow: 14px 14px 0px 0 #f0a5c2;
+    border-radius: 0.78125vw;
+    background-color: #f0f0f0;
+    opacity: 0;
+    transform: translate(0, 5vw);
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.work_box.loaded {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.work_box_title {
+    width: 100%;
+    text-align: center;
+    margin: -3px 0 0.5vw 0;
+    background-color: #303030;
+    font-size: 1.4vw;
+    color: #f0f0f0;
+    font-family: '游ゴシック';
+    font-weight: 600;
+    border-radius: 0.6vw 0.6vw 0 0;
+}
+
+.works>p {
+    color: #303030;
+    font-family: '游ゴシック';
+    font-weight: 600;
+    margin: 0 0 0 1vw;
+}
+
+.work_box_date {
+    font-size: 0.7vw;
+}
+
+.work_box_text {
+    font-size: 1vw;
+    margin: 0 0 0 2vw;
+}
+
+.work_chara {
+    position: absolute;
+    width: 55vw;
+    height: auto;
+    top: 2%;
+    left: 40vw;
+    transform: translate(-30%, 0);
+    transition: transform 0.4s, opacity 0.4s;
+    opacity: 0;
+}
+
+.work_chara>img {
+    width: 100%;
+}
+
+.work_chara.loaded {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 /*

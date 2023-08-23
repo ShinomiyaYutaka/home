@@ -5,7 +5,7 @@ let mailAddress = 'yutaka.s.arts';
 let gmail = '@gmail.com';
 
 menus = ['Main', 'About', 'Character', 'Content', 'Link', 'Work', 'Contact', 'Art'];
-menus_id = ['main_card_', 'about_card_', 'character_card_', 'content_card_', 'link_card_', 'Work', 'contact_card_', 'art_card_'];
+menus_id = ['main_card_', 'about_card_', 'character_card_', 'content_card_', 'link_card_', 'work_card_', 'contact_card_', 'art_card_'];
 
 
 $(function () {
@@ -41,12 +41,18 @@ function enterLoad() {
 }
 
 $('.enter').on('click', function () {
+    $('.enter_wrap').removeClass('ld');
     if (this.dataset.id == menumode) return;
     $('.enter').removeClass('now');
     $(this).addClass('now');
     cancelLoad();
     menumode = this.dataset.id;
     menuChange(menus[menumode]);
+    return false;
+});
+
+$('.enter_open').on('click', function () {
+    $('.enter_wrap').toggleClass('ld');
     return false;
 });
 

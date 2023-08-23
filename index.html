@@ -7,6 +7,7 @@
 	<title>しのみや ゆたかのホームページ</title>
 	<link rel="icon" type="image/x-icon" href="images/icon.ico">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -104,38 +105,38 @@
 						<div class="about_box_can" id="about_card_4">
 							<h2 class="about_box_title">興味のあること</h2>
 							<p>イラスト</p>
-							<p class="about_exp">（もっとうまくなりたい / ふざけた絵も好き）</p>
+							<p class="about_exp">（うまくなりたい / ふざけた絵も好き）</p>
 							<p>3Dモデル制作</p>
 							<p class="about_exp">（移植・モーション制作経験あり）</p>
 							<p>音楽</p>
 							<p class="about_exp">（知識0）</p>
 							<p>ゲーム制作</p>
-							<p class="about_exp">（もっと勉強したい）</p>
+							<p class="about_exp">（勉強したい）</p>
 						</div>
 					</div>
 					<div class="about_block_flex">
-						<div class="about_box_like" id="about_card_6">
+						<div class="about_box_like" id="about_card_5">
 							<h2 class="about_box_title">好き</h2>
 							<p>何かを作ること</p>
 							<p>ゲーム</p>
 							<p class="about_exp">（スマブラなど）</p>
 							<p>memes</p>
 						</div>
-						<div class="about_box_like" id="about_card_7">
+						<div class="about_box_like" id="about_card_6">
 							<h2 class="about_box_title">嫌い</h2>
 							<p>人混み</p>
 							<p>虫</p>
 							<p class="about_exp">（カッコイイ虫はOK）</p>
 						</div>
 					</div>
-					<div class="about_box_comment" id="about_card_8">
+					<div class="about_box_comment" id="about_card_7">
 						<h2 class="about_box_title">コメント</h2>
 						<p>色々なことができる人より、1つのことに絞って突き進んだ人のほうが強いと思います。</p>
 						<p>イラスト関連の力をもっとつけたい。自分の作ったものを売って暮らしたい。</p>
 						<p>強くなりたい。勝ちたい。</p>
 					</div>
 				</div>
-				<div class="about_box_anime" id="about_card_5">
+				<div class="about_box_anime" id="about_card_8">
 					<h2 class="about_box_title">好きなアニメ/漫画/キャラ</h2>
 					<p>イナズマイレブン</p>
 					<p class="about_exp">（2まで視聴済）</p>
@@ -265,19 +266,13 @@
 							<p>都合によって顔が変わる</p>
 							<p></p>
 						</div>
-						<!--
-						<div class="character_box_exp_icon" data-url="">
-							<img class="img_wall" src="images/n.png"></img>
-							<img class="character_box_exp_icon_img" src="images/links/youtube.png" alt="Youtube">
-						</div>
-						-->
 						<img class="img_wall" src="images/n.png"></img>
 						<img class="character_art" id="r_4_art_1" src="images/chara/r_4_art_1.png">
 						<img class="character_art" id="r_4_art_2" src="images/chara/r_4_art_2.png">
 					</div>
 				</div>
 			</div>
-			<div class="character_block_flex">
+			<div class="character_block_flex pc">
 				<div class="chara_select_box" id="character_card_0" data-id="1">
 					<img class="img_wall" src="images/n.png"></img>
 					<img class="chara_select_box_img" src="images/chara/r_1_icon.png">
@@ -299,8 +294,6 @@
 		
 		<!-- Art -->
 		<div class="art_content Art" style="display: none;">
-			<div id="area2">
-			</div>
 		</div>
 
 		<!-- Content -->
@@ -569,6 +562,21 @@
 			</div>
 		</div>
 
+		<!-- Work -->
+		<div class="work_content Work" style="display: none;">
+			<div class="work_chara" id="work_card_0">
+				<img class="img_wall" src="images/n.png"></img>
+				<img src="images/bg_chara_2.png" alt="bg">
+			</div>
+			<div class="work_box_wrap">
+				<div class="work_box" id="work_card_1">
+					<h2 class="work_box_title">主な実績</h2>
+					<div class="works">
+						<p class="work_box_text">まだありません</p></div>
+				</div>
+			</div>
+		</div>
+
 		<!-- Contact -->
 		<div class="contact_content Contact" style="display: none;">
 			<div>
@@ -695,7 +703,8 @@
 				</form>
 			</div>
 		</div>
-		<div>
+		<div class="enter_wrap">
+			<div class="enter_open"></div>
 			<div class="enter now" data-id="0">
 				<div class="enter_bg"></div>
 				<div class="enter_bg_cover"></div>
@@ -712,7 +721,7 @@
 				<p class="big">About</p>
 				<p class="mini">私について</p>
 			</div>
-			
+			<!--
 			<div class="enter" data-id="7">
 				<div class="enter_bg"></div>
 				<div class="enter_bg_cover"></div>
@@ -721,7 +730,7 @@
 				<p class="big">Art</p>
 				<p class="mini">アート</p>
 			</div>
-			
+			-->
 			<div class="enter" data-id="3">
 				<div class="enter_bg"></div>
 				<div class="enter_bg_cover"></div>
@@ -771,19 +780,4 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="shinomiyayutaka.js"></script>
-<script>
-	$(function () {
-	  $.ajax({
-		url: "https://www.pixiv.net/ajax/user/44018125/profile/all?lang=ja",
-		cache: false,
-		datatype: "json",
-		success: function (html) {
-			console.log(html);
-		  var html = $(html).find(".sc-9y4be5-1 jtUPOE"); //  別ページにあるhtml内の一部の要素を指定
-		  $("#area2").append(html); // append関数を使って取得したhtmlコードの埋め込み先を指定
-		},
-	  });
-	});
-  </script>
-
 </html>
