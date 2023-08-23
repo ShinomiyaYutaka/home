@@ -4,8 +4,8 @@ let setTimes = [];
 let mailAddress = 'yutaka.s.arts';
 let gmail = '@gmail.com';
 
-menus = ['Main', 'About', 'Character', 'Content', 'Link', 'Work', 'Contact'];
-menus_id = ['main_card_', 'about_card_', 'character_card_', 'content_card_', 'link_card_', 'Work', 'contact_card_'];
+menus = ['Main', 'About', 'Character', 'Content', 'Link', 'Work', 'Contact', 'Art'];
+menus_id = ['main_card_', 'about_card_', 'character_card_', 'content_card_', 'link_card_', 'Work', 'contact_card_', 'art_card_'];
 
 
 $(function () {
@@ -27,7 +27,7 @@ $(window).on('load', function () {
     }, 1200);
     setTimeout(() => {
         menuChange(menus[menumode]);
-    }, 2800);
+    }, 2900);
 });
 
 function enterLoad() {
@@ -67,6 +67,10 @@ $('.link_block_pad').on('click', function () {
         window.open(this.dataset.url, '_blank');
         return false;
     }
+    $('.dialog_mail').addClass('show');
+});
+
+$('.contact_exp_mail').on('click', function () {
     $('.dialog_mail').addClass('show');
 });
 
