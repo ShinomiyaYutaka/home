@@ -232,7 +232,7 @@ Main
     width: 26vw;
     font-size: 1.6vw;
     color: #303030;
-    font-family: '游ゴシック';
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     padding: 1vw;
     border: 3px solid;

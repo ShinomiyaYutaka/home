@@ -82,8 +82,8 @@
     }
 
     .explanation {
-        width: 50vw;
-        font-size: 2vw;
+        width: 80vw;
+        font-size: 40px;
         padding: 0.6vw 0;
         text-align: center;
         box-shadow: 1vw 1vw 0px 0 #f0a5c2;
@@ -91,22 +91,22 @@
     }
 
     .main_box {
-        width: 50vw;
+        width: 80vw;
         box-shadow: 1vw 1vw 0px 0 #f0a5c2;
         transform: translate(0, 50px);
     }
 
     .main_box_title {
-        font-size: 1.7vw;
+        font-size: 30px;
         ;
     }
 
     .main_box_date {
-        font-size: 1vw;
+        font-size: 25px;
     }
 
     .main_box_text {
-        font-size: 1.3vw;
+        font-size: 22px;
         margin: 0 0 0 1vw;
     }
 
