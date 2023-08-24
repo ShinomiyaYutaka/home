@@ -139,7 +139,7 @@
         transform: translate(-50%, 0);
     }
 
-    .about_content::-webkit-scrollbar{
+    .about_content::-webkit-scrollbar {
         display: none;
     }
 
@@ -260,10 +260,24 @@ Character
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
     .character_content {
-        margin: 70px auto;
+        height: calc(100svh - 210px);
+        width: 100%;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        margin: 0 auto;
+        padding-top: 110px;
         padding-bottom: 100px;
         left: 50%;
         transform: translate(-50%, 0);
+    }
+
+    .character_content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .character_block_flex {
+        width: fit-content;
+        margin: 0 auto;
     }
 
     .character_block_flex.pc {
@@ -274,6 +288,232 @@ Character
         display: block;
     }
 
+    .character_box {
+        margin: 10px;
+        width: 20vw;
+        height: 32vw;
+        border: #303030 3px solid;
+        border-radius: 15px;
+        background-color: #303030;
+        overflow: hidden;
+        box-shadow: 8px 8px 0px 0 #f0a5c2;
+        transition: transform 0.3s, opacity 0.3s;
+        transform: translate(0, -20%);
+        opacity: 0;
+    }
+
+    .character_box.loaded {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    .character_box_exp {
+        margin: 10px;
+        width: 70vw;
+        height: 32vw;
+        border: #303030 3px solid;
+        border-radius: 0.78125vw;
+        background-color: #ffffff70;
+        overflow: hidden;
+        box-shadow: 8px 8px 0px 0 #f0a5c2;
+        transform: translate(30%, 0);
+        opacity: 0;
+        transition: transform 0.35s, opacity 0.35s;
+    }
+
+    .character_box_exp.loaded {
+        transform: skewX(0deg);
+        opacity: 1;
+    }
+
+    .character_box_name_top {
+        position: absolute;
+        z-index: 3;
+        color: #fff;
+        font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
+        font-weight: 900;
+        white-space: nowrap;
+        font-size: 7.2vw;
+        text-shadow: 1px 2px 2px #f0a5c2;
+        transition: transform 0.5s, color 0.5s;
+        transform: skewX(0deg);
+        margin: -0.3em;
+        top: 10px;
+        right: 20px;
+    }
+
+    .character_box_name_bottom {
+        position: absolute;
+        z-index: 3;
+        color: #fff;
+        font-family: Arial;
+        font-weight: 600;
+        white-space: nowrap;
+        font-size: 5.5vw;
+        text-shadow: 1px 2px 2px #f0a5c2;
+        transition: transform 0.5s, color 0.5s;
+        transform: skewX(0deg);
+        margin: -0.1em;
+        bottom: 0;
+        left: 5px;
+    }
+
+    .character_video {
+        z-index: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: skewX(0deg);
+    }
+
+    .character_thm {
+        z-index: 2;
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        object-fit: cover;
+        transform: translate(-50%, 0);
+        opacity: 1;
+        transition: all 0.8s;
+        background-color: #e0e0e0;
+    }
+
+    .character_box:hover .character_thm {
+        opacity: 0;
+    }
+
+    .character_box:hover .character_box_name_top {
+        color: #514d4f;
+        transform: translate(3%, -10%);
+    }
+
+    .character_box:hover .character_box_name_bottom {
+        color: #514d4f;
+        transform: translate(-3%, 12%);
+    }
+
+    .character_box_exp_text {
+        position: absolute;
+        font-size: 2.5vw;
+        color: #303030;
+        font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
+        font-weight: 600;
+        top: 42%;
+        left: 4%;
+        z-index: 2;
+        transform: translate(0, -50%);
+    }
+
+    .character_box_exp_text>p {
+        margin: 0;
+    }
+
+    .character_box_exp_icon {
+        position: absolute;
+        width: 10vw;
+        height: 8vw;
+        left: 6%;
+        bottom: 6%;
+        border-radius: 0.78125vw;
+        cursor: pointer;
+        z-index: 300;
+        transition: background-color 0.1s;
+        transform: skewX(0deg);
+    }
+
+    .character_box_exp_icon:hover {
+        background-color: #dadada;
+    }
+
+    .character_box_exp_icon_img {
+        position: relative;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .character_art {
+        transform: skewX(0deg);
+        position: absolute;
+        width: auto;
+    }
+
+    #r_1_art_1 {
+        right: 1vw;
+        width: 35%;
+        margin: 0 10px 10px 10px;
+    }
+
+    #r_1_art_2 {
+        bottom: 0;
+        right: 17vw;
+        width: 22%;
+        margin: 6px;
+    }
+
+    #r_2_art_1 {
+        right: -3vw;
+        width: 45%;
+        margin: 0 0 10px 10px;
+    }
+
+    #r_2_art_2 {
+        right: 19vw;
+        width: 17%;
+        bottom: 3%;
+    }
+
+    #r_4_art_1 {
+        right: 0;
+        width: 40%;
+        margin: 0 0 10px 10px;
+    }
+
+    #r_4_art_2 {
+        bottom: 0;
+        right: 12vw;
+        width: 40%;
+        margin: 6px;
+    }
+
+    .chara_select_box {
+        position: relative;
+        width: 7vw;
+        height: 7vw;
+        border: #303030 3px solid;
+        border-radius: 0.78125vw;
+        margin: 10px;
+        box-shadow: 4px 4px 0px 0 #f0a5c2;
+        background-color: #f0f0f0;
+        overflow: hidden;
+        cursor: pointer;
+        transform: translate(0, 50%);
+        opacity: 0;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .chara_select_box.loaded {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    .chara_select_box_img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s;
+    }
+
+    .chara_select_box:hover>.chara_select_box_img {
+        width: 115%;
+        height: 115%;
+    }
+
     /*
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -282,23 +522,25 @@ Content
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
     .content_content {
+        height: calc(100svh - 210px);
+        width: 100%;
+        overflow: scroll;
+        -ms-overflow-style: none;
         margin: 0 auto;
+        padding-top: 110px;
         padding-bottom: 100px;
         left: 50%;
         transform: translate(-50%, 0);
     }
 
+    .content_content::-webkit-scrollbar {
+        display: none;
+    }
+
     .content_block_flex {
         display: block;
-        margin: 0;
-    }
-
-    .content_block_flex>.content_block_flex {
-        margin-right: 0;
-    }
-
-    .content_block_flex>div>.content_block_flex {
-        margin-left: 0;
+        width: fit-content;
+        margin: 0 auto;
     }
 
     .content_block_pad {
@@ -323,7 +565,8 @@ Content
         margin-right: -20px;
     }
 
-    .content_block, #content_card_0>.content_block {
+    .content_block,
+    #content_card_0>.content_block {
         position: relative;
         margin: 30px;
         width: 550px;
@@ -340,12 +583,15 @@ Content
         box-shadow: 8px 8px 12px 0 rgb(241, 184, 206);
     }
 
-    .content_block_icon, #content_card_0>.content_block>.content_block_icon {
+    .content_block_icon,
+    #content_card_0>.content_block>.content_block_icon {
         height: 250px;
         position: relative;
     }
 
-    .content_block_icon_img, .content_block_icon_img.comic_n, .content_block_icon_img.comic_b {
+    .content_block_icon_img,
+    .content_block_icon_img.comic_n,
+    .content_block_icon_img.comic_b {
         object-fit: contain;
         position: absolute;
         top: 50%;
@@ -355,7 +601,8 @@ Content
         height: 90%;
     }
 
-    .content_block_line, #content_card_0>.content_block>.content_block_line {
+    .content_block_line,
+    #content_card_0>.content_block>.content_block_line {
         position: initial;
         height: 65px;
         background-color: #303030;
@@ -374,7 +621,8 @@ Content
         transform: translate(-50%, -50%);
     }
 
-    .content_block_exp, #content_card_0>.content_block>.content_block_exp {
+    .content_block_exp,
+    #content_card_0>.content_block>.content_block_exp {
         position: initial;
         height: 38px;
         padding: 0.2vw 0.5vw 0.5vw 0.5vw;
