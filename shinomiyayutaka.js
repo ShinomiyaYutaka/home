@@ -18,6 +18,9 @@ $(function () {
 
 $(window).on('load', function () {
     allHide();
+    if (navigator.userAgent.indexOf('Android') > 0) {
+        $('.use_svh').addclass('android');
+    } 
     $('.gmail_address').html(mailAddress + gmail);
     let flag = localStorage.getItem("comic_world");
     if (flag == "broken" || flag == "true") {

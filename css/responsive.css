@@ -1267,4 +1267,8 @@ Contact
         cursor: pointer;
         font-size: 22px;
     }
+
+    .use_svh.android {
+        height: 100vh;
+    }
 }
