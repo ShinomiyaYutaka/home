@@ -1268,7 +1268,12 @@ Contact
         font-size: 22px;
     }
 
+    /* Android対応 */
     .use_svh.android {
         height: 100vh;
+    }
+
+    .work_content.android {
+        height: calc(100vh - 210px);
     }
 }
