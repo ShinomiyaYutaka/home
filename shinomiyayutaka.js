@@ -12,6 +12,10 @@ $(function () {
     $('.news').load('news.html');
 });
 
+$(function () {
+    $('.works').load('works.html');
+});
+
 $(window).on('load', function () {
     allHide();
     $('.gmail_address').html(mailAddress + gmail);
@@ -53,6 +57,11 @@ $('.enter').on('click', function () {
 
 $('.enter_open').on('click', function () {
     $('.enter_wrap').toggleClass('ld');
+    return false;
+});
+
+$('.enter_wall').on('click', function () {
+    $('.enter_wrap').removeClass('ld');
     return false;
 });
 

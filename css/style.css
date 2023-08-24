@@ -52,7 +52,7 @@ body {
     opacity: 1;
 }
 
-.enter_open {
+.enter_open, .enter_wall {
     display: none;
 }
 
@@ -955,6 +955,7 @@ Link
 }
 
 .link_block_line {
+    font-family: system-ui;
     height: 1.5vw;
     background-color: #303030;
     text-align: center;
@@ -1072,7 +1073,7 @@ Link
     padding: 5px 10px;
     border-radius: 13px;
     opacity: 0;
-    transition: all 0.3s;
+    transition: opacity 0.3s, top 0.3s;
 }
 
 .gmail_address_get_copied.show {
@@ -1113,11 +1114,6 @@ Work
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
-.work_box_wrap {
-    position: absolute;
-    top: 10%;
-    left: 16%;
-}
 
 .work_box_wrap {
     position: absolute;
