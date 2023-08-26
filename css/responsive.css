@@ -43,20 +43,26 @@
         border-radius: 10px;
     }
 
-    .enter_open>span:nth-child(1) {
+    .enter_open>span:nth-child(2) {
         margin-top: 24px;
     }
 
-    .enter_wrap.ld>.enter_open>span:nth-child(1) {
+    .enter_wrap.ld>.enter_open>span:nth-child(2) {
         transform: translate(0, 25px) rotate(45deg);
     }
 
-    .enter_wrap.ld>.enter_open>span:nth-child(2) {
+    .enter_wrap.ld>.enter_open>span:nth-child(3) {
         opacity: 0;
     }
 
-    .enter_wrap.ld>.enter_open>span:nth-child(3) {
+    .enter_wrap.ld>.enter_open>span:nth-child(4) {
         transform: translate(0, -25px) rotate(-45deg);
+    }
+
+    .enter_open_edge {
+        position: absolute;
+        width: 140%;
+        height: 140%;
     }
 
     .enter_wall {
