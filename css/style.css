@@ -1171,6 +1171,12 @@ Work
     margin: 0 0 0 2vw;
 }
 
+.work_box_link {
+    font-size: 1vw;
+    margin: 0 0 0 2vw;
+    color: #00008b;
+}
+
 .work_chara {
     position: absolute;
     width: 55vw;
