@@ -20,8 +20,27 @@ $(window).on('load', function () {
     allHide();
     if (navigator.userAgent.indexOf('Android') > 0) {
         $('.use_svh').addClass('android');
-    } 
-    $('.gmail_address').html(mailAddress + gmail);
+    }   
+
+    // 音楽歴
+    let music_text = $('#music_h').text();
+
+    var date1 = new Date(2023, 9, 19);
+    var date2 = new Date();
+    console.log('date1');
+    console.log(date1);
+    console.log('date2');
+    console.log(date2);
+    //var termDay = Math.floor((date2 - date1) / 86400000);
+    var termDay = (date2 - date1) / 86400000;
+    let yy = Math.floor(termDay / 365);
+    let mm = Math.floor((termDay - 365 * yy) / 30);
+    console.log(termDay);
+
+    music_text = music_text.replace('yy',yy);
+    $('#music_h').text(music_text.replace('mm',mm));
+
+    $('.gmail_address').text(mailAddress + gmail);
     let flag = localStorage.getItem("comic_world");
     if (flag == "broken" || flag == "true") {
         $('.comic_b').addClass('state');
