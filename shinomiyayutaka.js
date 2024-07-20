@@ -27,15 +27,9 @@ $(window).on('load', function () {
 
     var date1 = new Date(2023, 9, 19);
     var date2 = new Date();
-    console.log('date1');
-    console.log(date1);
-    console.log('date2');
-    console.log(date2);
-    //var termDay = Math.floor((date2 - date1) / 86400000);
     var termDay = (date2 - date1) / 86400000;
     let yy = Math.floor(termDay / 365);
     let mm = Math.floor((termDay - 365 * yy) / 30);
-    console.log(termDay);
 
     music_text = music_text.replace('yy',yy);
     $('#music_h').text(music_text.replace('mm',mm));
