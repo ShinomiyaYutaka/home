@@ -44,10 +44,10 @@ $(window).on('load', function () {
     enterLoad();
     setTimeout(() => {
         $('.loading').addClass('loaded_e');
-    }, 1200);
+    }, 0);
     setTimeout(() => {
         menuChange(menus[menumode]);
-    }, 2900);
+    }, 0);
 });
 
 function enterLoad() {
@@ -55,7 +55,7 @@ function enterLoad() {
     $('.enter').each(function (j, e) {
         setTimeout(function () {
             $(e).addClass('loaded_e');
-        }, 2000 + i * 80);
+        }, 60 + i * 80);
         i++;
     });
 }
