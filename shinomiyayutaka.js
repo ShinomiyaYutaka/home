@@ -1,5 +1,5 @@
 let menuChangeWait = 400;
-let menumode = 0;
+let menumode = 4;
 let setTimes = [];
 let mailAddress = 'yutaka.s.arts';
 let gmail = '@gmail.com';
@@ -64,7 +64,6 @@ $('.enter').on('click', function () {
     $('.enter_wrap').removeClass('ld');
     if (this.dataset.id == menumode) return;
     $('.enter').removeClass('now');
-    $(this).addClass('now');
     cancelLoad();
     menumode = this.dataset.id;
     menuChange(menus[menumode]);
@@ -169,6 +168,7 @@ function cancelLoad() {
 }
 
 function menuChange(menu) {
+    $('#enter_id_' + menumode).addClass('now');
     $('.loaded').removeClass('loaded');
     setTimeout(() => {
         allHide();
