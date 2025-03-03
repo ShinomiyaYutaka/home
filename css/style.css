@@ -954,6 +954,14 @@ Link
     height: auto;
 }
 
+.link_block_svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -32%);
+    width: 85%;
+}
+
 #amazon_logo {
     width: 67%;
 }
