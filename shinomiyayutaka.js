@@ -4,7 +4,7 @@ let setTimes = [];
 let mailAddress = 'yutaka.s.arts';
 let gmail = '@gmail.com';
 
-menus = ['Main', 'About', 'Character', 'Content', 'Link', 'Work', 'Contact', 'Art'];
+menus = ['Main', 'About', 'Character', 'Content', 'Link', 'Work', 'Contact', 'Music'];
 menus_id = ['main_card_', 'about_card_', 'character_card_', 'content_card_', 'link_card_', 'work_card_', 'contact_card_', 'art_card_'];
 
 
