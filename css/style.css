@@ -66,9 +66,11 @@ body {
     z-index: -5;
     border: 2px solid #ddd;
     border-left: 0;
-    transform: skewX(-15deg);
+    /*transform: skewX(-15deg);*/
     transition: all 0.2s;
     opacity: 0;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
 }
 
 .enter:hover>.enter_bg {
