@@ -1156,13 +1156,31 @@ Work
 .work_box_title {
     width: 100%;
     text-align: center;
-    margin: -3px 0 0.5vw 0;
+    margin: -3px 0 0 0;
     background-color: #303030;
     font-size: 1.4vw;
     color: #f0f0f0;
     font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     border-radius: 0.6vw 0.6vw 0 0;
+}
+
+.works {
+    padding-top: 8px;
+    overflow-y: scroll;
+    max-height: 75vh;
+}
+
+.works::-webkit-scrollbar {
+    
+}
+
+.works::-webkit-scrollbar-thumb {
+
+}
+
+.works::-webkit-scrollbar-track {
+
 }
 
 .works>p {
