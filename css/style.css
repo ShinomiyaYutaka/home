@@ -22,11 +22,12 @@ body {
 }
 
 .background {
-    background-image: url(../images/bg.png);
+    background-image: url(../images/bg_tile.png);
     position: fixed;
     width: 100vw;
     height: 100svh;
     z-index: -5;
+    
 }
 
 /*
@@ -244,7 +245,7 @@ Main
     border: 3px solid;
     border-radius: 0.78125vw;
     background-color: #f0f0f0;
-    box-shadow: 14px 14px 0px 0 #f0a5c2;
+    box-shadow: 14px 14px 0px 0 #76c2cf;
     opacity: 0;
     transition: opacity 0.4s, transform 0.4s;
     transform: translate(0, 5vw);
@@ -265,7 +266,7 @@ Main
     width: 34vw;
     padding-bottom: 1vw;
     border: #303030 3px solid;
-    box-shadow: 14px 14px 0px 0 #f0a5c2;
+    box-shadow: 14px 14px 0px 0 #76c2cf;
     border-radius: 0.78125vw;
     background-color: #f0f0f0;
     opacity: 0;
@@ -350,7 +351,7 @@ About
     position: relative;
     border: #303030 3px solid;
     /*overflow: hidden;*/
-    box-shadow: 4px 4px 0px 0 #f0a5c2;
+    box-shadow: 4px 4px 0px 0 #76c2cf;
     border-radius: 0.78125vw;
     margin: 10px;
     background-color: #f0f0f0;
@@ -499,7 +500,7 @@ Character
     border-radius: 0.78125vw;
     background-color: #303030;
     overflow: hidden;
-    box-shadow: 8px 8px 0px 0 #f0a5c2;
+    box-shadow: 8px 8px 0px 0 #76c2cf;
     transition: transform 0.3s, opacity 0.3s;
     transform: translate(0, -20%) skewX(-15deg);
     opacity: 0;
@@ -518,7 +519,7 @@ Character
     border-radius: 0.78125vw;
     background-color: #ffffff70;
     overflow: hidden;
-    box-shadow: 8px 8px 0px 0 #f0a5c2;
+    box-shadow: 8px 8px 0px 0 #76c2cf;
     transform: translate(30%, 0) skewX(-15deg);
     opacity: 0;
     transition: transform 0.35s, opacity 0.35s;
@@ -538,7 +539,7 @@ Character
     font-weight: 900;
     white-space: nowrap;
     font-size: 7.2vw;
-    text-shadow: 1px 2px 2px #f0a5c2;
+    text-shadow: 1px 2px 2px #76c2cf;
     transition: transform 0.5s, color 0.5s;
 
     margin: -0.3em;
@@ -555,7 +556,7 @@ Character
     font-weight: 600;
     white-space: nowrap;
     font-size: 5.5vw;
-    text-shadow: 1px 2px 2px #f0a5c2;
+    text-shadow: 1px 2px 2px #76c2cf;
     transition: transform 0.5s, color 0.5s;
 
     margin: -0.1em;
@@ -698,7 +699,7 @@ Character
     border: #303030 3px solid;
     border-radius: 0.78125vw;
     margin: 10px;
-    box-shadow: 4px 4px 0px 0 #f0a5c2;
+    box-shadow: 4px 4px 0px 0 #76c2cf;
     background-color: #f0f0f0;
     overflow: hidden;
     cursor: pointer;
@@ -778,7 +779,7 @@ Content
     width: 13vw;
     border: #303030 3px solid;
     border-radius: 0.78125vw;
-    box-shadow: 8px 8px 0px 0 #f0a5c2;
+    box-shadow: 8px 8px 0px 0 #76c2cf;
     transition: box-shadow 0.3s;
     background-color: #f0f0f0;
     overflow: hidden;
@@ -926,13 +927,13 @@ Link
     width: 12vw;
     border: #303030 3px solid;
     border-radius: 0.78125vw;
-    box-shadow: 8px 8px 0px 0 #f0a5c2;
+    box-shadow: 8px 8px 0px 0 #76c2cf;
     transition: box-shadow 0.3s;
     background-color: #f0f0f0;
 }
 
 .link_block_pad:hover>.link_block {
-    box-shadow: 8px 24px 12px 0 #f1b8ce;
+    box-shadow: 8px 24px 12px 0 #76c2cf;
 }
 
 .link_block_icon {
@@ -1140,7 +1141,7 @@ Work
     width: 26vw;
     padding-bottom: 1vw;
     border: #303030 3px solid;
-    box-shadow: 14px 14px 0px 0 #f0a5c2;
+    box-shadow: 14px 14px 0px 0 #76c2cf;
     border-radius: 0.78125vw;
     background-color: #f0f0f0;
     opacity: 0;
@@ -1172,7 +1173,7 @@ Work
 }
 
 .works::-webkit-scrollbar {
-    
+    border-radius: 0 0 0.56vw 0;
 }
 
 .works::-webkit-scrollbar-thumb {
@@ -1243,7 +1244,7 @@ Contact
 
 .contact_box, .contact_box_mail {
     border: #303030 3px solid;
-    box-shadow: 4px 4px 0px 0 #f0a5c2;
+    box-shadow: 4px 4px 0px 0 #76c2cf;
     border-radius: 0.78125vw;
     margin: 10px;
     background-color: #f0f0f0;
@@ -1258,7 +1259,7 @@ Contact
     margin-top: 7vw;
     margin-left: 25vw;
     width: 21vw;
-    box-shadow: 4px 4px 0px 0 #fa4a84;
+    box-shadow: 4px 4px 0px 0 #76c2cf;
     transform: translate(5vw, 0);
 }
 
@@ -1320,18 +1321,19 @@ Contact
     margin-left: 0.5em;
 }
 
+/* 送信ボタン */
 .input_button {
     cursor: pointer;
     width: 8vw;
     position: absolute;
     font-size: 1vw;
-    color: #fa4a84;
+    color: #048b85;
     font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
     background-color: #f0f0f0;
     border: #303030 3px solid;
     border-radius: 0.6vw;
-    box-shadow: 4px 4px 0px 0 #fa4a84;
+    box-shadow: 4px 4px 0px 0 #76c2cf;
     right: 10px;
     overflow: hidden;
     opacity: 0;
