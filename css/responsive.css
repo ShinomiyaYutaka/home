@@ -137,13 +137,13 @@
         font-size: 40px;
         padding: 0.6vw 0;
         text-align: center;
-        box-shadow: 8px 8px 0 #f0a5c2;
+        box-shadow: 8px 8px 0 #76c2cf;
         transform: translate(0, 50px);
     }
 
     .main_box {
         width: 75vw;
-        box-shadow: 8px 8px 0px 0 #f0a5c2;
+        box-shadow: 8px 8px 0px 0 #76c2cf;
         transform: translate(0, 50px);
     }
 
@@ -216,7 +216,7 @@
         position: relative;
         border: #303030 5px solid;
         /*overflow: hidden;*/
-        box-shadow: 4px 4px 0px 0 #f0a5c2;
+        box-shadow: 4px 4px 0px 0 #76c2cf;
         border-radius: 15px;
         margin: 20px;
         background-color: #f0f0f0;
@@ -350,7 +350,7 @@ Character
         border-radius: 15px;
         background-color: #303030;
         overflow: hidden;
-        box-shadow: 8px 8px 0px 0 #f0a5c2;
+        box-shadow: 8px 8px 0px 0 #76c2cf;
         transition: transform 0.3s, opacity 0.3s;
         transform: translate(0, -20%);
         opacity: 0;
@@ -369,7 +369,7 @@ Character
         border-radius: 0.78125vw;
         background-color: #ffffff70;
         overflow: hidden;
-        box-shadow: 8px 8px 0px 0 #f0a5c2;
+        box-shadow: 8px 8px 0px 0 #76c2cf;
         transform: translate(30%, 0);
         opacity: 0;
         transition: transform 0.35s, opacity 0.35s;
@@ -388,7 +388,7 @@ Character
         font-weight: 900;
         white-space: nowrap;
         font-size: 7.2vw;
-        text-shadow: 1px 2px 2px #f0a5c2;
+        text-shadow: 1px 2px 2px #76c2cf;
         transition: transform 0.5s, color 0.5s;
         transform: skewX(0deg);
         margin: -0.3em;
@@ -404,7 +404,7 @@ Character
         font-weight: 600;
         white-space: nowrap;
         font-size: 5.5vw;
-        text-shadow: 1px 2px 2px #f0a5c2;
+        text-shadow: 1px 2px 2px #76c2cf;
         transition: transform 0.5s, color 0.5s;
         transform: skewX(0deg);
         margin: -0.1em;
@@ -539,7 +539,7 @@ Character
         border: #303030 3px solid;
         border-radius: 0.78125vw;
         margin: 10px;
-        box-shadow: 4px 4px 0px 0 #f0a5c2;
+        box-shadow: 4px 4px 0px 0 #76c2cf;
         background-color: #f0f0f0;
         overflow: hidden;
         cursor: pointer;
@@ -626,14 +626,14 @@ Content
         width: 75vw;
         border: #303030 3px solid;
         border-radius: 15px;
-        box-shadow: 8px 8px 0px 0 #f0a5c2;
+        box-shadow: 8px 8px 0px 0 #76c2cf;
         transition: box-shadow 0.3s;
         background-color: #f0f0f0;
         overflow: visible;
     }
 
     .content_block_pad:hover>.content_block {
-        box-shadow: 8px 8px 0px 0 #f0a5c2;
+        box-shadow: 8px 8px 0px 0 #76c2cf;
     }
 
     .content_block_icon,
@@ -747,7 +747,7 @@ Link
         width: 34vw;
         border: #303030 3px solid;
         border-radius: 12px;
-        box-shadow: 8px 8px 0px 0 #f0a5c2;
+        box-shadow: 8px 8px 0px 0 #76c2cf;
         transition: box-shadow 0.3s;
         background-color: #f0f0f0;
     }
@@ -763,7 +763,7 @@ Link
     }
 
     .link_block_pad:hover>.link_block {
-        box-shadow: 8px 8px 0px 0 #f0a5c2;
+        box-shadow: 8px 8px 0px 0 #76c2cf;
     }
 
     .link_block_icon {
@@ -997,7 +997,7 @@ Work
         width: 70vw;
         padding-bottom: 1vw;
         border: #303030 3px solid;
-        box-shadow: 10px 10px 0px 0 #f0a5c2;
+        box-shadow: 10px 10px 0px 0 #76c2cf;
         border-radius: 15px;
         background-color: #f0f0f0c0;
         opacity: 0;
@@ -1099,7 +1099,7 @@ Contact
     .contact_box,
     .contact_box_mail {
         border: #303030 3px solid;
-        box-shadow: 4px 4px 0px 0 #f0a5c2;
+        box-shadow: 4px 4px 0px 0 #76c2cf;
         border-radius: 15px;
         margin: 12px 15px;
         background-color: #f0f0f0;
@@ -1116,7 +1116,7 @@ Contact
         right: 5vw;
         margin-bottom: 60px;
         width: 40vw;
-        box-shadow: 4px 4px 0px 0 #fa4a84;
+        box-shadow: 4px 4px 0px 0 #76c2cf;
         transform: translate(5vw, 0);
     }
 
@@ -1187,12 +1187,12 @@ Contact
         position: relative;
         left: 50%;
         font-size: 3vw;
-        color: #fa4a84;
+        color: #048b85;
         font-weight: 600;
         background-color: #f0f0f0;
         border: #303030 3px solid;
         border-radius: 1.6vw;
-        box-shadow: 4px 4px 0px 0 #fa4a84;
+        box-shadow: 4px 4px 0px 0 #76c2cf;
         right: auto;
         overflow: hidden;
         opacity: 0;
