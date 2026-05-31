@@ -1358,6 +1358,7 @@ Music
         display: block;
     }
 
+    .dialog_music_link_area,
     .dialog_music_link_content,
     .dialog_music_link_content > .dialog_music_flex,
     .dialog_music_credit > .dialog_music_flex {
