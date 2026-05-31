@@ -1358,9 +1358,11 @@ Music
         display: block;
     }
 
+    .dialog_music_link_content,
     .dialog_music_link_content > .dialog_music_flex,
     .dialog_music_credit > .dialog_music_flex {
         height: auto;
+        /* stretch だとスマホで表示がおかしくなる */
     }
 
     /* 閉じるボタン */
