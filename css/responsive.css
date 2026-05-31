@@ -746,7 +746,7 @@ Link
         margin-right: 1vw;
         width: 34vw;
         border: #303030 3px solid;
-        border-radius: 200px;
+        border-radius: 20vw;
         corner-shape: superellipse(3.3);
         box-shadow: 8px 8px 0px 0 #76c2cf;
         transition: box-shadow 0.3s;
@@ -1351,7 +1351,7 @@ Music
     /* ダイアログ */
     .dialog_music_block {
         overflow-y: auto;
-        padding-bottom: 1vh;
+        padding-bottom: 1svh;
     }
 
     .dialog_music_block>.dialog_music_flex {
@@ -1366,7 +1366,7 @@ Music
     .dislog_music_close_icon_tab {
         display: block;
         position: absolute;
-        top: calc(9vh - 10vw);
+        top: calc(9svh - 10vw);
         right: 3vw;
     }
 
@@ -1418,7 +1418,7 @@ Music
 
     .dialog_music_comment {
         overflow-y: visible;
-        padding-bottom: 5vh;
+        padding-bottom: 5svh;
     }
 
     /* 文字サイズ */

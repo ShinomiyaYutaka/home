@@ -761,7 +761,7 @@ Music
     border: #303030 solid 3px;
     border-radius: 10px;
     width: 88vw;
-    height: 78vh;
+    height: 78svh;
     padding: 30px;
 }
 
@@ -799,7 +799,7 @@ Music
 /* イメージ領域 */
 .dialog_music_iamge_area {
     width: 150%;
-    max-width: 100vh;
+    max-width: 100svh;
 }
 
 /* メインイメージ */
@@ -1286,7 +1286,7 @@ Work
 .works {
     padding-top: 8px;
     overflow-y: scroll;
-    max-height: 75vh;
+    max-height: 75svh;
 }
 
 .works::-webkit-scrollbar {
