@@ -1356,6 +1356,7 @@ Music
 
     .dialog_music_block>.dialog_music_flex {
         display: block;
+        height: auto;
     }
 
     /* 閉じるボタン */
