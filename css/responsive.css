@@ -17,7 +17,7 @@
         z-index: 210;
         width: 35vw;
         height: 100svh;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%,rgba(230, 230, 230, 0.8) 100%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(230, 230, 230, 0.8) 100%);
         transform: translate(-100%, 0);
         transition: transform 0.3s;
     }
@@ -746,7 +746,8 @@ Link
         margin-right: 1vw;
         width: 34vw;
         border: #303030 3px solid;
-        border-radius: 12px;
+        border-radius: 200px;
+        corner-shape: superellipse(3.3);
         box-shadow: 8px 8px 0px 0 #76c2cf;
         transition: box-shadow 0.3s;
         background-color: #f0f0f0;
@@ -1287,4 +1288,153 @@ Contact
     .work_content.android {
         height: calc(100vh - 210px);
     }
+
+    /*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Music
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+    .music_content {
+        height: calc(100svh - 210px);
+        width: 100%;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        margin: 0 auto;
+        padding-top: 110px;
+        padding-bottom: 100px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .music_block_flex {
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .music_block_pad:hover {
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    .music_block_pad {
+        float: left;
+    }
+
+    .music_block {
+        margin-left: 15vw;
+        box-shadow: 8px 8px 0px 0 #76c2cf;
+    }
+
+    .music_block_pad:hover>.music_block {
+        box-shadow: 8px 8px 0px 0 #76c2cf;
+    }
+
+    .music_block_icon {
+        position: relative;
+        height: 20.25vw;
+        width: 36vw;
+    }
+
+    .music_content>.music_block_flex>.music_block_pad:nth-child(even)>.music_block {
+        margin-left: 1vw;
+        margin-right: 0;
+    }
+
+    .music_block_line {
+        height: 3vw;
+        font-size: 2vw;
+    }
+
+    /* ダイアログ */
+    .dialog_music_block {
+        overflow-y: auto;
+        padding-bottom: 1vh;
+    }
+
+    .dialog_music_block>.dialog_music_flex {
+        display: block;
+    }
+
+    /* 閉じるボタン */
+    .dislog_music_close_icon_pc {
+        display: none;
+    }
+
+    .dislog_music_close_icon_tab {
+        display: block;
+        position: absolute;
+        top: calc(9vh - 10vw);
+        right: 3vw;
+    }
+
+    .close_img {
+        margin: 0;
+        width: 10vw;
+        height: auto;
+    }
+
+    /* イメージ領域 */
+    .dialog_music_iamge_area {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* メインイメージ */
+    .dialog_music_main {
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    /* 各種リンク */
+    .dialog_music_link {
+        position: relative;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    /* 楽曲配信中！ */
+    .dialog_music_stream {
+        padding-top: 16px;
+    }
+
+    .dialog_music_stream>p {
+        font-size: 22px;
+        height: 4vw;
+
+        &::after {
+            width: 1.6vw;
+            height: 1.6vw;
+        }
+    }
+
+    /* コメント */
+    .dialog_music_comment_block,
+    .dialog_music_comment {
+        height: auto;
+    }
+
+    .dialog_music_comment {
+        overflow-y: visible;
+        padding-bottom: 5vh;
+    }
+
+    /* 文字サイズ */
+    /* タイトル */
+    .dialog_music_title_jp>p,
+    .dialog_music_title_en>p {
+        font-size: 34px;
+    }
+
+    /* クレジット コメント */
+    .dialog_music_credit_roll>p,
+    .dialog_music_credit_name>p,
+    .dialog_music_release_head>p,
+    .dialog_music_release_date>p,
+    .dialog_music_comment>p {
+        font-size: 26px;
+    }
+
 }

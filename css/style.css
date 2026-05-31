@@ -27,7 +27,11 @@ body {
     width: 100vw;
     height: 100svh;
     z-index: -5;
-    
+
+}
+
+.hidden {
+    display: none;
 }
 
 /*
@@ -53,7 +57,8 @@ body {
     opacity: 1;
 }
 
-.enter_open, .enter_wall {
+.enter_open,
+.enter_wall {
     display: none;
 }
 
@@ -80,8 +85,8 @@ body {
 
 .enter_bg_cover {
     left: -20px;
-    width: 350px;
-    height: 85px;
+    width: 20vw;
+    height: 6vw;
     position: absolute;
     z-index: -5;
 }
@@ -130,7 +135,7 @@ body {
     z-index: -3;
     width: 2.6vw;
     height: 2.6vw;
-    background-color: #c5cae9;
+    background-color: #f17ab6;
     border-radius: 0.25vw;
     transition: transform 0.5s, background-color 0.5s, border 0.5s;
 }
@@ -349,9 +354,11 @@ About
 .about_box_anime,
 .about_box_can {
     position: relative;
-    border: #303030 3px solid;
-    /*overflow: hidden;*/
-    box-shadow: 4px 4px 0px 0 #76c2cf;
+    /*border: #303030 3px solid;*/
+    outline: #303030 3px solid;
+    outline-offset: -2px;
+    overflow: hidden;
+    box-shadow: 6px 5px 0px 0 #76c2cf;
     border-radius: 0.78125vw;
     margin: 10px;
     background-color: #f0f0f0;
@@ -368,7 +375,7 @@ About
     color: #f0f0f0;
     font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
-    border-radius: 0.6vw 0.6vw 0 0;
+    /*border-radius: 0.6vw 0.6vw 0 0;*/
 }
 
 .about_box_title_name {
@@ -377,7 +384,7 @@ About
     height: 100%;
     margin: 0 0 0 -3px;
     background-color: #303030;
-    border-radius: 0.6vw 0 0 0.6vw;
+    /*border-radius: 0.6vw 0 0 0.6vw;*/
 }
 
 .about_box_title_name>p {
@@ -392,7 +399,7 @@ About
     font-weight: 600;
 }
 
-.about_box_title_text{
+.about_box_title_text {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -418,7 +425,7 @@ About
 .about_box_icon {
     width: 7vw;
     height: 7vw;
-    border: none;
+    outline: none;
     box-shadow: none;
     background-color: #0000;
     transform: translate(0, -4vw);
@@ -475,258 +482,6 @@ About
     transform: translate(0, 0);
 }
 
-/*
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-
-Character
-
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-*/
-.character_content {
-    position: absolute;
-    margin: 2vw auto auto 23vw;
-}
-
-.character_block_flex {
-    margin: 6px;
-    display: flex;
-}
-
-.character_box {
-    margin: 10px;
-    width: 15vw;
-    height: 30vw;
-    border: #303030 3px solid;
-    border-radius: 0.78125vw;
-    background-color: #303030;
-    overflow: hidden;
-    box-shadow: 8px 8px 0px 0 #76c2cf;
-    transition: transform 0.3s, opacity 0.3s;
-    transform: translate(0, -20%) skewX(-15deg);
-    opacity: 0;
-}
-
-.character_box.loaded {
-    transform: translate(0, 0) skewX(-15deg);
-    opacity: 1;
-}
-
-.character_box_exp {
-    margin: 10px;
-    width: 40vw;
-    height: 30vw;
-    border: #303030 3px solid;
-    border-radius: 0.78125vw;
-    background-color: #ffffff70;
-    overflow: hidden;
-    box-shadow: 8px 8px 0px 0 #76c2cf;
-    transform: translate(30%, 0) skewX(-15deg);
-    opacity: 0;
-    transition: transform 0.35s, opacity 0.35s;
-}
-
-.character_box_exp.loaded {
-    transform: skewX(-15deg);
-    opacity: 1;
-}
-
-.character_box_name_top {
-    position: absolute;
-    z-index: 3;
-    transform: skewX(15deg);
-    color: #fff;
-    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
-    font-weight: 900;
-    white-space: nowrap;
-    font-size: 7.2vw;
-    text-shadow: 1px 2px 2px #76c2cf;
-    transition: transform 0.5s, color 0.5s;
-
-    margin: -0.3em;
-    top: 10px;
-    right: 20px;
-}
-
-.character_box_name_bottom {
-    position: absolute;
-    z-index: 3;
-    transform: skewX(15deg);
-    color: #fff;
-    font-family: Arial;
-    font-weight: 600;
-    white-space: nowrap;
-    font-size: 5.5vw;
-    text-shadow: 1px 2px 2px #76c2cf;
-    transition: transform 0.5s, color 0.5s;
-
-    margin: -0.1em;
-    bottom: 0;
-    left: 5px;
-}
-
-.character_video {
-    z-index: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transform: skewX(15deg);
-}
-
-.character_thm {
-    z-index: 2;
-    height: 100%;
-    left: 50%;
-    position: absolute;
-    object-fit: cover;
-    transform: translate(-50%, 0) skewX(15deg);
-    opacity: 1;
-    transition: all 0.8s;
-    background-color: #e0e0e0;
-}
-
-.character_box:hover .character_thm {
-    opacity: 0;
-}
-
-.character_box:hover .character_box_name_top {
-    color: #514d4f;
-    transform: translate(3%, -10%) skewX(15deg);
-}
-
-.character_box:hover .character_box_name_bottom {
-    color: #514d4f;
-    transform: translate(-3%, 12%) skewX(15deg);
-}
-
-.character_id_box {
-    display: none;
-}
-
-.character_id_box.loaded_chara {
-    display: block;
-}
-
-.character_box_exp_text {
-    position: absolute;
-    font-size: 1.6vw;
-    color: #303030;
-    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
-    font-weight: 600;
-    top: 52%;
-    left: 4%;
-    z-index: 2;
-    transform: translate(0, -50%) skewX(15deg);
-}
-
-.character_box_exp_text>p {
-    margin: 0;
-}
-
-.character_box_exp_icon {
-    transform: skewX(15deg);
-    position: absolute;
-    width: 6vw;
-    height: 5vw;
-    left: 6%;
-    bottom: 6%;
-    border-radius: 0.78125vw;
-    cursor: pointer;
-    z-index: 300;
-    transition: background-color 0.1s;
-}
-
-.character_box_exp_icon:hover {
-    background-color: #dadada;
-}
-
-.character_box_exp_icon_img {
-    position: relative;
-    width: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.character_art {
-    position: absolute;
-    width: auto;
-    transform: skewX(15deg);
-}
-
-#r_1_art_1 {
-    right: 1vw;
-    width: 50%;
-    margin: 0 10px 10px 10px;
-}
-
-#r_1_art_2 {
-    bottom: 0;
-    right: 2vw;
-    width: 35%;
-    margin: 6px;
-}
-
-#r_2_art_1 {
-    right: -3vw;
-    width: 55%;
-    margin: 0 0 10px 10px;
-}
-
-#r_2_art_2 {
-    right: 5vw;
-    width: 20%;
-    bottom: 3%;
-}
-
-#r_4_art_1 {
-    right: 0;
-    width: 55%;
-    margin: 0 0 10px 10px;
-}
-
-#r_4_art_2 {
-    bottom: 0;
-    right: 5vw;
-    width: 60%;
-    margin: 6px;
-}
-
-.chara_select_box {
-    position: relative;
-    width: 7vw;
-    height: 7vw;
-    border: #303030 3px solid;
-    border-radius: 0.78125vw;
-    margin: 10px;
-    box-shadow: 4px 4px 0px 0 #76c2cf;
-    background-color: #f0f0f0;
-    overflow: hidden;
-    cursor: pointer;
-    transform: translate(0, 50%);
-    opacity: 0;
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-.chara_select_box.loaded {
-    transform: translate(0, 0);
-    opacity: 1;
-}
-
-.chara_select_box_img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s;
-}
-
-.chara_select_box:hover>.chara_select_box_img {
-    width: 115%;
-    height: 115%;
-}
 
 /*
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -792,7 +547,7 @@ Content
 }
 
 .content_block_pad:hover>.content_block {
-    box-shadow: 8px 24px 12px 0 rgb(241, 184, 206);
+    box-shadow: 8px 24px 8px 0 rgb(241, 184, 206);
 }
 
 .content_block_icon {
@@ -885,6 +640,364 @@ Content
     color: #eF0000 !important;
 }
 
+
+/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Music
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+.music_content {
+    position: absolute;
+    margin: 2vw auto auto 20vw;
+}
+
+.music_block_flex {
+    margin: 10px;
+    display: flex;
+}
+
+.music_block_pad {
+    z-index: 108;
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translate(0, 50px);
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.music_block_pad.loaded {
+    opacity: 1;
+    transform: translate(0, 0);
+    pointer-events: auto;
+}
+
+.music_block_pad:hover {
+    padding-bottom: 20px;
+    margin-top: -20px;
+}
+
+.music_block {
+    background-clip: padding-box;
+    margin: 10px;
+    /*border: #303030 2px solid;*/
+    outline: #303030 5px solid;
+    outline-offset: -2px;
+    border-radius: 0.78125vw;
+    box-shadow: 8px 8px 0px 0 #76c2cf;
+    transition: box-shadow 0.3s;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.music_block_pad:hover>.music_block {
+    box-shadow: 8px 24px 6px 0 #76c2cf;
+}
+
+.music_block_icon {
+    position: relative;
+    height: 9vw;
+    width: 16vw;
+}
+
+.music_block_icon_img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.music_block_svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -32%);
+    width: 85%;
+}
+
+.music_block_line {
+    outline: #303030 3px solid;
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    font-family: system-ui;
+    height: 1.5vw;
+    background-color: #303030;
+    text-align: center;
+    color: #f0f0f0;
+    font-weight: 600;
+    font-size: 1vw;
+    /*border-radius: 0 0 0.4vw 0.4vw;*/
+}
+
+.music_block_line>p {
+    margin: 0;
+    padding: 1px 0 0 0;
+}
+
+/* ダイアログ */
+.dialog_music {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000a;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+    z-index: 400;
+}
+
+.dialog_music.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.dialog_music_block {
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #f0f0f0;
+    border: #303030 solid 3px;
+    border-radius: 10px;
+    width: 88vw;
+    height: 78vh;
+    padding: 30px;
+}
+
+/* 閉じるボタン */
+.dislog_music_close_icon_pc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.dislog_music_close_icon_tab {
+    display: none;
+}
+
+.close_img {
+    margin: 10px 10px 0 0;
+    width: 16px;
+    height: 16px;
+}
+
+.dialog_music_link_area,
+.dialog_music_link_content {
+    height: -webkit-fill-available; /* Chrome, Safari, Firefox 146以降 */
+    height: stretch;
+}
+
+.dialog_music_flex {
+    display: flex;
+    height: -webkit-fill-available; /* Chrome, Safari, Firefox 146以降 */
+    height: stretch;
+}
+
+/* イメージ領域 */
+.dialog_music_iamge_area {
+    width: 150%;
+    max-width: 100vh;
+}
+
+/* メインイメージ */
+.dialog_music_main {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.music_main_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    outline: #303030 3px solid;
+    outline-offset: -2px;
+    border-radius: 4vw;
+    corner-shape: superellipse(2.4);
+    overflow: hidden;
+}
+
+/* サブイメージ */
+.dialog_music_sub_flex {
+    display: flex;
+    margin: 1% 0 0 0;
+}
+
+.dialog_music_sub {
+    position: relative;
+    width: 22%;
+    height: auto;
+    outline: #909090 2px solid;
+    outline-offset: -1px;
+    border-radius: 4vw;
+    corner-shape: superellipse(2.4);
+    float: left;
+    margin: 0 auto 1% auto;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.dialog_music_sub:hover {
+    outline: #cacece 2px solid;
+}
+
+.dialog_music_sub.selected {
+    outline: #40c8d5 4px solid;
+    outline-offset: 0;
+}
+
+.dialog_music_sub_img_block {
+    margin: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 4vw;
+    corner-shape: superellipse(2.4);
+    overflow: hidden;
+}
+
+.music_sub_img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 各種リンク */
+.dialog_music_link {
+    position: relative;
+    width: 6%;
+    height: 6%;
+    float: left;
+    margin: 0 1% 1% 0;
+    cursor: pointer;
+    padding: 1%;
+}
+
+/*
+.dialog_music_link:hover {
+    background-color: #d0d0d0;
+}
+*/
+
+.dialog_music_link_img_block {
+    position: relative;
+    top: 50%;
+    transform: translate(-0, -50%);
+}
+
+.music_link_img {
+    width: 100%;
+    height: auto;
+}
+
+/* 楽曲配信中！ */
+.dialog_music_stream {
+    padding-top: 16px;
+}
+
+.dialog_music_stream > p {
+  position: relative;
+  margin: 0;
+  width: fit-content;
+  padding: 3px 14px;
+  border-radius: 5px;
+  background-color: #303030;
+  color: #f0f0f0;
+  font-size: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    left: 0;
+    width: 11px;
+    height: 11px;
+    box-sizing: border-box;
+    background-color: #303030;
+  }
+}
+
+/* テキスト領域 */
+.dialog_music_info_area {
+    width: -webkit-fill-available; /* Chrome, Safari, Firefox 146以降 */
+    width: stretch;
+}
+
+.dialog_music_info_content {
+    padding: 0 0 0 2vw;
+    width: -webkit-fill-available; /* Chrome, Safari, Firefox 146以降 */
+    width: stretch;
+}
+
+/* タイトル */
+.dialog_music_title_jp > p,
+.dialog_music_title_en > p {
+    margin: 0;
+    font-size: 2.4vw;
+    color: #303030;
+    font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
+    font-weight: 600;
+}
+
+/* タイトル英名 */
+.dialog_music_title_en > p {
+    font-size: 1.6vw;
+}
+
+/* クレジット */
+.dialog_music_credit_roll>p,
+.dialog_music_credit_name>p,
+.dialog_music_release_head > p,
+.dialog_music_release_date > p {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 16px;
+    color: #303030;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.dialog_music_credit_roll > p::after,
+.dialog_music_release_head > p::after {
+    content: "：";
+}
+
+.dialog_music_credit_space {
+    margin: 0 20px;
+}
+
+/* 罫線 */
+.dialog_music_line{
+    margin: 8px 0 8px 0;
+    border: none;
+    border-top: 1px solid #303030;
+    width: 100%;
+}
+
+/* コメント */
+.dialog_music_comment_block {
+    position: absolute;
+    padding: 0 30px 30px 0;
+    height: -webkit-fill-available; /* Chrome, Safari, Firefox 146以降 */
+    height: stretch;
+}
+
+.dialog_music_comment {
+    overflow-y: auto;
+    height: -webkit-fill-available; /* Chrome, Safari, Firefox 146以降 */
+    height: stretch;
+}
+
+.dialog_music_comment > p {
+    margin: 0;
+    font-size: 16px;
+    color: #303030;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
 /*
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -926,14 +1039,15 @@ Link
     margin: 10px;
     width: 12vw;
     border: #303030 3px solid;
-    border-radius: 0.78125vw;
+    border-radius: 5vw;
+    corner-shape: superellipse(3.3);
     box-shadow: 8px 8px 0px 0 #76c2cf;
     transition: box-shadow 0.3s;
     background-color: #f0f0f0;
 }
 
 .link_block_pad:hover>.link_block {
-    box-shadow: 8px 24px 12px 0 #76c2cf;
+    box-shadow: 8px 24px 8px 0 #76c2cf;
 }
 
 .link_block_icon {
@@ -1140,13 +1254,16 @@ Work
     position: relative;
     width: 26vw;
     padding-bottom: 1vw;
-    border: #303030 3px solid;
+    /*border: #303030 3px solid;*/
+    outline: #303030 3px solid;
+    outline-offset: -2px;
     box-shadow: 14px 14px 0px 0 #76c2cf;
     border-radius: 0.78125vw;
     background-color: #f0f0f0;
     opacity: 0;
     transform: translate(0, 5vw);
     transition: transform 0.4s, opacity 0.4s;
+    overflow: hidden;
 }
 
 .work_box.loaded {
@@ -1163,7 +1280,7 @@ Work
     color: #f0f0f0;
     font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
     font-weight: 600;
-    border-radius: 0.6vw 0.6vw 0 0;
+    /*border-radius: 0.6vw 0.6vw 0 0;*/
 }
 
 .works {
@@ -1176,13 +1293,9 @@ Work
     border-radius: 0 0 0.56vw 0;
 }
 
-.works::-webkit-scrollbar-thumb {
+.works::-webkit-scrollbar-thumb {}
 
-}
-
-.works::-webkit-scrollbar-track {
-
-}
+.works::-webkit-scrollbar-track {}
 
 .works>p {
     color: #303030;
@@ -1242,7 +1355,8 @@ Contact
     display: flex;
 }
 
-.contact_box, .contact_box_mail {
+.contact_box,
+.contact_box_mail {
     border: #303030 3px solid;
     box-shadow: 4px 4px 0px 0 #76c2cf;
     border-radius: 0.78125vw;
@@ -1254,7 +1368,7 @@ Contact
     width: 30vw;
 }
 
-.contact_box_mail { 
+.contact_box_mail {
     position: absolute;
     margin-top: 7vw;
     margin-left: 25vw;
@@ -1263,7 +1377,8 @@ Contact
     transform: translate(5vw, 0);
 }
 
-.contact_box.loaded, .contact_box_mail.loaded {
+.contact_box.loaded,
+.contact_box_mail.loaded {
     opacity: 1;
     transform: translate(0, 0);
 }
@@ -1282,11 +1397,10 @@ Contact
     border-radius: 0.6vw 0.6vw 0 0;
 }
 
-.contact_text_input {
+.contact_text_input {}
 
-}
-
-.contact_text_input > input, .contact_text_input > textarea {
+.contact_text_input>input,
+.contact_text_input>textarea {
     background-color: #f0f0f0 !important;
     border: none;
     outline: none;
@@ -1301,12 +1415,13 @@ Contact
     color: #303030;
 }
 
-.contact_text_input > textarea {
+.contact_text_input>textarea {
     height: 24em;
     resize: none;
 }
 
-.contact_text_input > input:focus, .contact_text_input > textarea:focus {
+.contact_text_input>input:focus,
+.contact_text_input>textarea:focus {
     border: none;
     outline: none;
 }
@@ -1346,7 +1461,8 @@ Contact
     transform: translate(0, 0);
 }
 
-.input_button:hover, .contact_box_mail:hover {
+.input_button:hover,
+.contact_box_mail:hover {
     background-color: #ffffff;
     border: #404040 3px solid;
 }
@@ -1359,7 +1475,7 @@ Contact
     margin: 10px 20px 10px 20px;
 }
 
-.contact_exp > p {
+.contact_exp>p {
     margin: 0;
     color: #303030;
     font-family: '游ゴシック', "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W6", sans-serif;
@@ -1372,7 +1488,7 @@ Contact
     display: flex;
 }
 
-.contact_exp_mail > p {
+.contact_exp_mail>p {
     width: 60%;
     margin: 11px 0px 8px 0;
     color: #303030;
@@ -1385,6 +1501,7 @@ Contact
     position: relative;
     width: 3.5vw;
 }
+
 .content_exp_must::before {
     content: "*";
     color: #ff4343;

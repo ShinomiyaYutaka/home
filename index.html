@@ -8,6 +8,7 @@
 	<meta name="keywords" content="ボカロP,ホームページ,絵,イラスト,スマブラ,ユタカ,しのみや ゆたか,四宮ルルミ,四宮,VTuber,Live2D">
 	<link rel="icon" type="image/x-icon" href="images/icon.ico">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/firefox.css">
 	<link rel="stylesheet" href="css/responsive.css">
 
 	<meta property="og:title" content="しのみや ゆたかのホームページ">
@@ -25,12 +26,75 @@
 </head>
 
 <body>
+	<!-- ロード中 -->
 	<div class="loading">
 		<div class="logo">
 			<div class="title_sq"></div>
 			<img class="title_img" src="images/name_logo.png" alt="しのみや ゆたか">
 		</div>
 	</div>
+
+	<!-- ダイアログ：MUSIC -->
+	<div class="dialog_music">
+		<!-- 閉じるボタンスマホ -->
+		<div class="dislog_music_close_icon_tab">
+			<img class="close_img" src="images/CloseIconWhite.png" alt="close">
+		</div>
+		<div class="dialog_music_block">
+			<!-- 閉じるボタンPC -->
+			<div class="dislog_music_close_icon_pc">
+				<img class="close_img" src="images/CloseIconBlack.png" alt="close">
+			</div>
+			<div class="dialog_music_flex">
+				<!-- 楽曲イメージ -->
+				<div class="dialog_music_iamge_area">
+					<!-- メインイメージ -->
+					<div class="dialog_music_main">
+						<img class="img_wall" src="images/n.png"></img>
+						<img class="music_main_img" src="images/mv/001/001_01.png" alt="MusicImage">
+					</div>
+					<!-- サブイメージ -->
+					<div class="dialog_music_sub_flex">
+						<div class="dialog_music_sub">
+							<div class="dialog_music_sub_img_block">
+								<img class="img_wall" src="images/n.png"></img>
+								<img class="music_sub_img" id="music_sub_img_01" src="images/mv/001/001_01.png"
+									alt="MusicImageSub">
+							</div>
+						</div>
+						<div class="dialog_music_sub">
+							<div class="dialog_music_sub_img_block">
+								<img class="img_wall" src="images/n.png"></img>
+								<img class="music_sub_img" id="music_sub_img_02" src="images/mv/001/001_02.png"
+									alt="MusicImageSub">
+							</div>
+						</div>
+						<div class="dialog_music_sub">
+							<div class="dialog_music_sub_img_block">
+								<img class="img_wall" src="images/n.png"></img>
+								<img class="music_sub_img" id="music_sub_img_03" src="images/mv/001/001_03.png"
+									alt="MusicImageSub">
+							</div>
+						</div>
+						<div class="dialog_music_sub">
+							<div class="dialog_music_sub_img_block">
+								<img class="img_wall" src="images/n.png"></img>
+								<img class="music_sub_img" id="music_sub_img_04" src="images/mv/001/001_04.png"
+									alt="MusicImageSub">
+							</div>
+						</div>
+					</div>
+					<!-- 各種リンク -->
+					<div class="dialog_music_link_area"></div>
+				</div>
+
+				<!-- 楽曲情報 -->
+				<div class="dialog_music_info_area"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ダイアログ：メールアドレス -->
 	<div class="dialog_mail">
 		<div class="dialog_mail_block">
 			<p class="gmail_address_block_title">メールアドレスをコピー</p>
@@ -47,31 +111,18 @@
 			<button class="dialog_mail_close">とじる</button>
 		</div>
 	</div>
+
+	<!-- ダイアログ：お問い合わせ送信 -->
 	<div class="dialog_contact">
 		<div class="dialog_contact_block">
 			<p class="gmail_address_block_title">お問い合わせを送信しました</p>
 			<button class="dialog_contact_close">OK</button>
 		</div>
 	</div>
+
+	<!-- コンテンツ -->
 	<div class="content">
 		<div class="background use_svh"></div>
-
-		<!-- Main -->
-		<div class="main_content Main" style="display: none;">
-			<div class="bg_chara" id="main_card_0">
-				<img class="img_wall" src="images/n.png"></img>
-				<img src="images/bg_chara.png" alt="bg">
-			</div>
-			<div class="main_box_wrap">
-				<div class="explanation" id="main_card_1">
-					<p>しのみや ゆたか　のホームページ</p>
-				</div>
-				<div class="main_box" id="main_card_2">
-					<h2 class="main_box_title">お知らせ</h2>
-					<div class="news"></div>
-				</div>
-			</div>
-		</div>
 
 		<!-- About -->
 		<div class="about_content About" style="display: none;">
@@ -114,6 +165,7 @@
 							<p>プログラム</p>
 							<p>ゲーム制作</p>
 							<p>Webページ制作</p>
+							<p class="about_exp">など…</p>
 						</div>
 						<div class="about_box_can" id="about_card_4">
 							<h2 class="about_box_title">興味のあること</h2>
@@ -163,145 +215,13 @@
 					<p class="about_exp">（7部まで読了）</p>
 					<p>進撃の巨人</p>
 					<p>チェンソーマン</p>
-					<p class="about_exp">（2部読んでます）</p>
+					<p class="about_exp">（2部まで読了）</p>
 					<p>デスノート</p>
 					<p>ドラゴンボール</p>
 					<p>バキ</p>
+					<p>北斗の拳</p>
 					<p>ポケモンDP</p>
 					<p>など…</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- Character -->
-		<div class="character_content Character" style="display: none;">
-			<div class="character_id_box loaded_chara" id="chara_id_box_1">
-				<div class="character_block_flex">
-					<div class="character_box Character">
-						<p class="character_box_name_top">四宮</p>
-						<p class="character_box_name_bottom">ネム</p>
-						<img class="img_wall" src="images/n.png"></img>
-						<img class="character_thm" src="images/chara/r_1_thm.png">
-						<video class="character_video" poster="images/chara/r_1_thm.png" webkit-playsinline playsinline
-							muted autoplay loop>
-							<source src="images/chara/r_1_loop.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div class="character_box_exp Character">
-						<div class="character_box_exp_text">
-							<p>初めて作ったLive2Dモデル</p>
-							<p>当初の名前は「四宮ルルミ」だった</p>
-							<p>現在は別チャンネルにて活動中</p>
-						</div>
-						<div class="character_box_exp_icon" data-url="https://www.youtube.com/@user-jy8tv1dp4h">
-							<img class="img_wall" src="images/n.png"></img>
-							<img class="character_box_exp_icon_img" src="images/links/youtube.png" alt="Youtube">
-						</div>
-						<img class="img_wall" src="images/n.png"></img>
-						<img class="character_art" id="r_1_art_1" src="images/chara/r_1_art_1.png">
-						<img class="character_art" id="r_1_art_2" src="images/chara/r_1_art_2.png">
-					</div>
-				</div>
-			</div>
-
-			<div class="character_id_box" id="chara_id_box_2">
-				<div class="character_block_flex">
-					<div class="character_box Character">
-						<p class="character_box_name_top">四宮</p>
-						<p class="character_box_name_bottom">ルルミ</p>
-						<img class="img_wall" src="images/n.png"></img>
-						<img class="character_thm" src="images/chara/r_2_thm.png">
-						<video class="character_video" poster="images/chara/r_2_thm.png" webkit-playsinline playsinline
-							muted autoplay loop>
-							<source src="images/chara/r_2_loop.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div class="character_box_exp Character">
-						<div class="character_box_exp_text">
-							<p>「四宮ルルミ」Ver.2.1</p>
-							<p>最初はできなかったが、途中から</p>
-							<p>母音対応、服装切り替え機能を追加</p>
-							<p>このLive2Dモデルは無料配布中</p>
-						</div>
-						<div class="character_box_exp_icon" data-url="https://shinomiyayutaka.booth.pm/items/4577484">
-							<img class="img_wall" src="images/n.png"></img>
-							<img class="character_box_exp_icon_img" src="images/links/booth.png" alt="BOOTH">
-						</div>
-						<img class="img_wall" src="images/n.png"></img>
-						<img class="character_art" id="r_2_art_1" src="images/chara/r_2_art_1.png">
-						<img class="character_art" id="r_2_art_2" src="images/chara/r_2_free.png" alt="無料">
-					</div>
-				</div>
-			</div>
-
-			<div class="character_id_box" id="chara_id_box_3">
-				<div class="character_block_flex">
-					<div class="character_box Character">
-						<p class="character_box_name_top">四宮</p>
-						<p class="character_box_name_bottom">ムム</p>
-						<img class="img_wall" src="images/n.png"></img>
-						<img class="character_thm" src="images/chara/r_3_thm.png">
-						<video class="character_video" poster="images/chara/r_3_thm.png" webkit-playsinline playsinline
-							muted autoplay loop>
-							<source src="images/chara/r_3_loop.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div class="character_box_exp Character">
-						<div class="character_box_exp_text">
-							<p>「四宮ルルミ」Ver.2を元に作製したモデル</p>
-							<p>別チャンネルにて活動中</p>
-						</div>
-						<div class="character_box_exp_icon" data-url="https://www.youtube.com/@user-yl8sp6hw3o">
-							<img class="img_wall" src="images/n.png"></img>
-							<img class="character_box_exp_icon_img" src="images/links/youtube.png" alt="Youtube">
-						</div>
-						<img class="img_wall" src="images/n.png"></img>
-						<img class="character_art" id="r_3_art_1" src="">
-						<img class="character_art" id="r_3_art_2" src="">
-					</div>
-				</div>
-			</div>
-
-			<div class="character_id_box" id="chara_id_box_4">
-				<div class="character_block_flex">
-					<div class="character_box Character">
-						<p class="character_box_name_top">四宮</p>
-						<p class="character_box_name_bottom">ルルミ</p>
-						<img class="img_wall" src="images/n.png"></img>
-						<img class="character_thm" src="images/chara/r_4_thm.png">
-						<video class="character_video" poster="images/chara/r_4_thm.png" webkit-playsinline playsinline
-							muted autoplay loop>
-							<source src="images/chara/r_4_loop.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div class="character_box_exp Character">
-						<div class="character_box_exp_text">
-							<p>現在の「四宮ルルミ」</p>
-							<p>都合によって顔が変わる</p>
-							<p></p>
-						</div>
-						<img class="img_wall" src="images/n.png"></img>
-						<img class="character_art" id="r_4_art_1" src="images/chara/r_4_art_1.png">
-						<img class="character_art" id="r_4_art_2" src="images/chara/r_4_art_2.png">
-					</div>
-				</div>
-			</div>
-			<div class="character_block_flex pc">
-				<div class="chara_select_box" id="character_card_0" data-id="1">
-					<img class="img_wall" src="images/n.png"></img>
-					<img class="chara_select_box_img" src="images/chara/r_1_icon.png">
-				</div>
-				<div class="chara_select_box" id="character_card_1" data-id="2">
-					<img class="img_wall" src="images/n.png"></img>
-					<img class="chara_select_box_img" src="images/chara/r_2_icon.png">
-				</div>
-				<div class="chara_select_box" id="character_card_2" data-id="3">
-					<img class="img_wall" src="images/n.png"></img>
-					<img class="chara_select_box_img" src="images/chara/r_3_icon.png">
-				</div>
-				<div class="chara_select_box" id="character_card_3" data-id="4">
-					<img class="img_wall" src="images/n.png"></img>
-					<img class="chara_select_box_img" src="images/chara/r_4_icon.png">
 				</div>
 			</div>
 		</div>
@@ -310,99 +230,8 @@
 		<div class="art_content Art" style="display: none;">
 		</div>
 
-		<!-- Content -->
-		<div class="content_content Content" style="display: none;">
-			<div class="content_block_flex">
-				<div class="content_block_flex">
-					<div class="content_block_pad" id="content_card_0" data-url="">
-						<div class="content_block">
-							<div class="content_block_icon">
-								<img class="img_wall" src="images/n.png"></img>
-								<img class="content_block_icon_img comic_n" src="images/contents/comic-n.png"
-									alt="comic">
-								<img class="content_block_icon_img comic_b" src="images/contents/comic-b.png"
-									alt="comic">
-							</div>
-							<div class="content_block_line">
-								<p class="comic_n">【読み切り作品】この先通行止め　全29ページ</p>
-								<p class="comic_b">【読み切り作品】この先通行止め　全4ページ</p>
-							</div>
-							<div class="content_block_exp">
-								<p class="content_free">【無料】</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="content_block_flex">
-						<div class="content_block_pad" id="content_card_1"
-							data-url="https://shinomiyayutaka.booth.pm/items/4577484">
-							<div class="content_block">
-								<div class="content_block_icon">
-									<img class="img_wall" src="images/n.png"></img>
-									<img class="content_block_icon_img" src="images/contents/vt_set.png" alt="vt_set">
-								</div>
-								<div class="content_block_line">
-									<p>Live2Dモデルデータ<br>& 配信用セット</p>
-								</div>
-								<div class="content_block_exp">
-									<p class="content_free">【無料】</p>
-								</div>
-							</div>
-						</div>
-						<div class="content_block_pad" id="content_card_2"
-							data-url="https://shinomiyayutaka.booth.pm/items/4576533">
-							<div class="content_block">
-								<div class="content_block_icon">
-									<img class="img_wall" src="images/n.png"></img>
-									<img class="content_block_icon_img" src="images/contents/overlay.png"
-										alt="配信用オーバーレイ">
-								</div>
-								<div class="content_block_line">
-									<p>【配信用】オーバーレイ<br>発光アニメーション付き</p>
-								</div>
-								<div class="content_block_exp">
-									<p class="content_paid">1,084</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="content_block_flex">
-						<div class="content_block_pad" id="content_card_3"
-							data-url="https://shinomiyayutaka.booth.pm/items/4967437">
-							<div class="content_block">
-								<div class="content_block_icon">
-									<img class="img_wall" src="images/n.png"></img>
-									<img class="content_block_icon_img" src="images/contents/order.png"
-										alt="対抗戦オーダー表作製ツール">
-								</div>
-								<div class="content_block_line">
-									<p>【配信用】対抗戦オーダー<br>表作製ツール</p>
-								</div>
-								<div class="content_block_exp">
-									<p class="content_free">【無料】</p>
-								</div>
-							</div>
-						</div>
-						<div class="content_block_pad" id="content_card_4"
-							data-url="https://shinomiyayutaka.booth.pm/items/4967525">
-							<div class="content_block">
-								<div class="content_block_icon">
-									<img class="img_wall" src="images/n.png"></img>
-									<img class="content_block_icon_img" src="images/contents/sumamate_data.png"
-										alt="スマメイトレート取得ツール">
-								</div>
-								<div class="content_block_line">
-									<p>【配信用】スマメイト用<br>レート取得ツール</p>
-								</div>
-								<div class="content_block_exp">
-									<p class="content_free">【無料】</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<!-- Music -->
+		<div class="music_content Music" style="display: none;">
 		</div>
 
 		<!-- Link-->
@@ -444,7 +273,7 @@
 					<div class="link_block">
 						<div class="link_block_icon">
 							<img class="img_wall" src="images/n.png"></img>
-							<img class="link_block_icon_img" src="images/links/youtube.png" alt="Youtube">
+							<img class="link_block_icon_img" src="images/links/youtube.png" alt="YouTube">
 						</div>
 						<div class="link_block_line">
 							<p>YouTube</p>
@@ -469,25 +298,35 @@
 						</div>
 					</div>
 				</div>
-				<div class="link_block_pad" id="link_card_4" data-url="https://www.tunecore.co.jp/artists/shinomiyayutaka">
+				<div class="link_block_pad" id="link_card_4"
+					data-url="https://www.tunecore.co.jp/artists/shinomiyayutaka">
 					<div class="link_block">
 						<div class="link_block_icon">
 							<img class="img_wall" src="images/n.png"></img>
 							<a class="link_block_svg">
-								<svg width="100%" height="auto" viewBox="0 0 800.33 197.29" class="w-auto h-xl lt-sm:h-full align-middle">
+								<svg width="100%" height="auto" viewBox="0 0 800.33 197.29"
+									class="w-auto h-xl lt-sm:h-full align-middle">
 									<defs>
-										<style>.tcj_logo_white_svg__cls-1{fill:#303030}</style>
+										<style>
+											.tcj_logo_white_svg__cls-1 {
+												fill: #303030
+											}
+										</style>
 									</defs>
-									<g id="tcj_logo_white_svg__\u30EC\u30A4\u30E4\u30FC_2" data-name="\u30EC\u30A4\u30E4\u30FC 2">
-										<g id="tcj_logo_white_svg__\u30EC\u30A4\u30E4\u30FC_1-2" data-name="\u30EC\u30A4\u30E4\u30FC 1">
-											<path class="tcj_logo_white_svg__cls-1" d="M480.45 99a45.75 45.75 0 01-4.93 8.77 41.16 41.16 0 01-20.92 15.33 43 43 0 01-13.6 2.16 41.39 41.39 0 01-17.2-3.65 44.62 44.62 0 01-14.06-10 47.67 47.67 0 01-12.9-32.81 46.93 46.93 0 013.46-18 47.63 47.63 0 019.43-14.69 44.46 44.46 0 0114.06-10A41.24 41.24 0 01441 32.47a44.54 44.54 0 0114.12 2.17 40.42 40.42 0 0120.73 15.47 48.51 48.51 0 014.84 8.7h9.81a57 57 0 00-7.19-14.57 48.51 48.51 0 00-25-18.63 53.52 53.52 0 00-17-2.62 49.74 49.74 0 00-20.71 4.4 53.55 53.55 0 00-16.93 12 58.13 58.13 0 00-11.36 61.21 56.78 56.78 0 0011.36 17.78 53.21 53.21 0 0016.93 12 49.6 49.6 0 0020.71 4.41 51.71 51.71 0 0016.39-2.56 49.56 49.56 0 0025.2-18.47A54.83 54.83 0 00490.49 99zM598.79 56.48a55.74 55.74 0 00-11.38-17.84 52.48 52.48 0 00-38.09-16.12 50.7 50.7 0 00-20.87 4.36 52.6 52.6 0 00-17.07 12 57.42 57.42 0 00-15.65 39.88 57.82 57.82 0 0015.65 40 52.75 52.75 0 0017.07 12 52.15 52.15 0 0041.75 0 52.89 52.89 0 0017-12 57.08 57.08 0 0011.45-17.92 57.7 57.7 0 004.21-22.12 59.49 59.49 0 00-4.07-22.24zm-8.61 40.6a47.12 47.12 0 01-9.47 14.82 43.51 43.51 0 01-14.12 9.93 43.11 43.11 0 01-34.54 0 43.45 43.45 0 01-14.13-9.93A47.86 47.86 0 01505 78.77a47.56 47.56 0 0112.95-33 43.45 43.45 0 0114.13-9.93 41.9 41.9 0 0117.27-3.61 43.39 43.39 0 0131.51 13.34 45.64 45.64 0 019.42 14.77 49.07 49.07 0 013.41 18.42 47.68 47.68 0 01-3.51 18.32zM691.76 130.68h-10v-26.49c0-5.29-1.4-9.32-4.2-12.06S670.29 88 664.05 88h-41.74v42.68h-10V22.56h41.19c5.49 0 17.08.81 21.44 2.42A32.14 32.14 0 01686 31.67 27.88 27.88 0 01692.81 42c1.55 4 1.86 8.93 1.86 13.71 0 5.82-.83 10.48-3.42 15a29.5 29.5 0 01-10.91 10.76q11.37 6.69 11.37 22.73zm-32.23-52.27c6.44 0 12.7-1.81 17-4.74 5-3.41 8.76-7.44 8.76-18.59s-4-15.62-9-18.85c-4.23-2.72-11.44-4.23-18.08-4.23h-35.9v46.41zM783.79 22.56V32h-67.23v39.08h61v9.44h-61v40.58h67.23v9.58h-77.28V22.56zM799.92 128a5.4 5.4 0 01-1.12 1.66 5.46 5.46 0 01-1.66 1.12 5.31 5.31 0 01-4.09 0 5.25 5.25 0 01-2.78-2.78 5.42 5.42 0 01-.41-2 5.26 5.26 0 01.41-2 5.34 5.34 0 011.12-1.66 5.4 5.4 0 011.66-1.12 5.31 5.31 0 014.09 0 5.28 5.28 0 011.66 1.12 5.17 5.17 0 011.12 1.66 5.08 5.08 0 01.41 2 5.23 5.23 0 01-.41 2zm-1-3.7a4.85 4.85 0 00-.89-1.36 4.6 4.6 0 00-1.34-.91 4.12 4.12 0 00-1.63-.32 4 4 0 00-1.63.32 4.35 4.35 0 00-1.34.91 4.67 4.67 0 00-.9 1.36 4.47 4.47 0 000 3.32 4.54 4.54 0 00.9 1.36 4.18 4.18 0 001.34.91 4 4 0 001.63.33 4.13 4.13 0 001.63-.33 4.42 4.42 0 001.34-.91 4.71 4.71 0 00.89-1.36 4.34 4.34 0 000-3.32zm-1.21 4.42h-1.21l-1-2h-1.4v2H793v-5.76h2.76a2 2 0 011.45.51 1.84 1.84 0 01.53 1.38 1.8 1.8 0 01-.33 1.08 1.77 1.77 0 01-.87.67zm-2-3a1.06 1.06 0 00.61-.2.77.77 0 00.28-.68.88.88 0 00-.23-.69 1.05 1.05 0 00-.66-.19h-1.69v1.76zM48 112.41a18.72 18.72 0 01-7.49-3.35 16.59 16.59 0 01-5.1-6.78 28.62 28.62 0 01-1.89-11.21V41.16h24.15V22.7H33.52V0H14.45v22.7H0v18.46h14.45v49.91a48.82 48.82 0 003.16 18.17 35.64 35.64 0 008.78 13.12A31.81 31.81 0 0040 129.68a43.59 43.59 0 0011.24 1.4 55.61 55.61 0 006.1-.35l.77-.09v-17.82l-.94.08a31.61 31.61 0 01-9.17-.49zm90.7-23.61a26.8 26.8 0 01-7.8 19.2 25.72 25.72 0 01-8.48 5.59 27.8 27.8 0 01-10.51 2c-8.23 0-14.58-2.47-18.85-7.34s-6.5-11.58-6.5-19.85V22.7H67.49v64.86a58.58 58.58 0 002.73 18.33 40.92 40.92 0 008.12 14.44 36.77 36.77 0 0013.21 9.51 44.21 44.21 0 0017.68 3.37 42.05 42.05 0 0018.12-3.79 38.68 38.68 0 0012-8.78v10.1H158V22.7h-19.3zm109.63-55.89a36.94 36.94 0 00-13.21-9.51 44.36 44.36 0 00-17.69-3.4 41.22 41.22 0 00-18 3.91 39.83 39.83 0 00-12.07 8.87V22.7h-18.68v108H188V64.85a28.32 28.32 0 012-10.71 25.31 25.31 0 015.59-8.48 26.77 26.77 0 018.6-5.71A27.84 27.84 0 01215 37.86c8.21 0 14.51 2.56 18.73 7.64s6.41 11.76 6.41 19.77v65.47h19.07V65.88a59.63 59.63 0 00-2.73-18.43 41 41 0 00-8.15-14.54zm128.4 48.45a69.48 69.48 0 00-4.5-25.7 58.91 58.91 0 00-12.16-19.27 53 53 0 00-17.51-12.17A52 52 0 00322.19 20 50.52 50.52 0 00301 24.54a55.84 55.84 0 00-17.2 12.16 58 58 0 00-15.93 40.13 57.17 57.17 0 004.3 22.17 55 55 0 0029.24 29.77 54.12 54.12 0 0021.82 4.4c12.51 0 23.31-3.14 32.08-9.34s15.14-15.2 18.9-26.76l.37-1.13h-20.33l-.23.5a33 33 0 01-12 14.08c-5.13 3.34-11.46 5-18.82 5a34.94 34.94 0 01-23.47-9.06 37.9 37.9 0 01-8.27-10.8 38.65 38.65 0 01-4-13.49h89.27zm-88.09-16.55A36.2 36.2 0 01293.5 54a39.55 39.55 0 018.08-8.89 34.3 34.3 0 019.87-5.54 31.18 31.18 0 0121.69.1 33.68 33.68 0 019.75 5.74 38.88 38.88 0 017.78 9 40.54 40.54 0 014.65 10.43zM312.18 189.08a12.46 12.46 0 01-2.5 4.37 11 11 0 01-4.06 2.84 14.2 14.2 0 01-5.48 1 13 13 0 01-5.15-1 12.62 12.62 0 01-4.09-2.76 12.49 12.49 0 01-2.69-4.09 13 13 0 01-1-5.06h4.68a9.28 9.28 0 00.55 3.2 7.56 7.56 0 004.2 4.48 8.54 8.54 0 003.48.67q4.17 0 6.2-2.51a10.23 10.23 0 002-6.67V158H313v25.54a16.88 16.88 0 01-.82 5.54zM339.54 185.39l-4.12 11.23h-5.12L344.88 158h5.34l14.3 38.61h-5.29l-4.06-11.23zm7.9-21.59l-6.29 17.2h12.46zM388.22 196.62h-4.73V158h16.25a15 15 0 015.31.87 10.75 10.75 0 013.89 2.42 10.08 10.08 0 012.4 3.69 14.24 14.24 0 010 9.41 10.12 10.12 0 01-2.4 3.7 11 11 0 01-3.89 2.42 15.24 15.24 0 01-5.31.86h-11.52zm0-34.1v14.35h11.52a8.69 8.69 0 005.56-1.7c1.45-1.12 2.17-2.95 2.17-5.47s-.72-4.35-2.17-5.49a8.81 8.81 0 00-5.56-1.69zM434.71 185.39l-4.12 11.23h-5.12L440 158h5.34l14.31 38.61h-5.25l-4.06-11.23zm7.89-21.59l-6.28 17.2h12.46zM509.37 196.62h-5.23l-20.75-31.43v31.43h-4.73V158H484l20.75 31.38V158h4.67z"></path>
+									<g id="tcj_logo_white_svg__\u30EC\u30A4\u30E4\u30FC_2"
+										data-name="\u30EC\u30A4\u30E4\u30FC 2">
+										<g id="tcj_logo_white_svg__\u30EC\u30A4\u30E4\u30FC_1-2"
+											data-name="\u30EC\u30A4\u30E4\u30FC 1">
+											<path class="tcj_logo_white_svg__cls-1"
+												d="M480.45 99a45.75 45.75 0 01-4.93 8.77 41.16 41.16 0 01-20.92 15.33 43 43 0 01-13.6 2.16 41.39 41.39 0 01-17.2-3.65 44.62 44.62 0 01-14.06-10 47.67 47.67 0 01-12.9-32.81 46.93 46.93 0 013.46-18 47.63 47.63 0 019.43-14.69 44.46 44.46 0 0114.06-10A41.24 41.24 0 01441 32.47a44.54 44.54 0 0114.12 2.17 40.42 40.42 0 0120.73 15.47 48.51 48.51 0 014.84 8.7h9.81a57 57 0 00-7.19-14.57 48.51 48.51 0 00-25-18.63 53.52 53.52 0 00-17-2.62 49.74 49.74 0 00-20.71 4.4 53.55 53.55 0 00-16.93 12 58.13 58.13 0 00-11.36 61.21 56.78 56.78 0 0011.36 17.78 53.21 53.21 0 0016.93 12 49.6 49.6 0 0020.71 4.41 51.71 51.71 0 0016.39-2.56 49.56 49.56 0 0025.2-18.47A54.83 54.83 0 00490.49 99zM598.79 56.48a55.74 55.74 0 00-11.38-17.84 52.48 52.48 0 00-38.09-16.12 50.7 50.7 0 00-20.87 4.36 52.6 52.6 0 00-17.07 12 57.42 57.42 0 00-15.65 39.88 57.82 57.82 0 0015.65 40 52.75 52.75 0 0017.07 12 52.15 52.15 0 0041.75 0 52.89 52.89 0 0017-12 57.08 57.08 0 0011.45-17.92 57.7 57.7 0 004.21-22.12 59.49 59.49 0 00-4.07-22.24zm-8.61 40.6a47.12 47.12 0 01-9.47 14.82 43.51 43.51 0 01-14.12 9.93 43.11 43.11 0 01-34.54 0 43.45 43.45 0 01-14.13-9.93A47.86 47.86 0 01505 78.77a47.56 47.56 0 0112.95-33 43.45 43.45 0 0114.13-9.93 41.9 41.9 0 0117.27-3.61 43.39 43.39 0 0131.51 13.34 45.64 45.64 0 019.42 14.77 49.07 49.07 0 013.41 18.42 47.68 47.68 0 01-3.51 18.32zM691.76 130.68h-10v-26.49c0-5.29-1.4-9.32-4.2-12.06S670.29 88 664.05 88h-41.74v42.68h-10V22.56h41.19c5.49 0 17.08.81 21.44 2.42A32.14 32.14 0 01686 31.67 27.88 27.88 0 01692.81 42c1.55 4 1.86 8.93 1.86 13.71 0 5.82-.83 10.48-3.42 15a29.5 29.5 0 01-10.91 10.76q11.37 6.69 11.37 22.73zm-32.23-52.27c6.44 0 12.7-1.81 17-4.74 5-3.41 8.76-7.44 8.76-18.59s-4-15.62-9-18.85c-4.23-2.72-11.44-4.23-18.08-4.23h-35.9v46.41zM783.79 22.56V32h-67.23v39.08h61v9.44h-61v40.58h67.23v9.58h-77.28V22.56zM799.92 128a5.4 5.4 0 01-1.12 1.66 5.46 5.46 0 01-1.66 1.12 5.31 5.31 0 01-4.09 0 5.25 5.25 0 01-2.78-2.78 5.42 5.42 0 01-.41-2 5.26 5.26 0 01.41-2 5.34 5.34 0 011.12-1.66 5.4 5.4 0 011.66-1.12 5.31 5.31 0 014.09 0 5.28 5.28 0 011.66 1.12 5.17 5.17 0 011.12 1.66 5.08 5.08 0 01.41 2 5.23 5.23 0 01-.41 2zm-1-3.7a4.85 4.85 0 00-.89-1.36 4.6 4.6 0 00-1.34-.91 4.12 4.12 0 00-1.63-.32 4 4 0 00-1.63.32 4.35 4.35 0 00-1.34.91 4.67 4.67 0 00-.9 1.36 4.47 4.47 0 000 3.32 4.54 4.54 0 00.9 1.36 4.18 4.18 0 001.34.91 4 4 0 001.63.33 4.13 4.13 0 001.63-.33 4.42 4.42 0 001.34-.91 4.71 4.71 0 00.89-1.36 4.34 4.34 0 000-3.32zm-1.21 4.42h-1.21l-1-2h-1.4v2H793v-5.76h2.76a2 2 0 011.45.51 1.84 1.84 0 01.53 1.38 1.8 1.8 0 01-.33 1.08 1.77 1.77 0 01-.87.67zm-2-3a1.06 1.06 0 00.61-.2.77.77 0 00.28-.68.88.88 0 00-.23-.69 1.05 1.05 0 00-.66-.19h-1.69v1.76zM48 112.41a18.72 18.72 0 01-7.49-3.35 16.59 16.59 0 01-5.1-6.78 28.62 28.62 0 01-1.89-11.21V41.16h24.15V22.7H33.52V0H14.45v22.7H0v18.46h14.45v49.91a48.82 48.82 0 003.16 18.17 35.64 35.64 0 008.78 13.12A31.81 31.81 0 0040 129.68a43.59 43.59 0 0011.24 1.4 55.61 55.61 0 006.1-.35l.77-.09v-17.82l-.94.08a31.61 31.61 0 01-9.17-.49zm90.7-23.61a26.8 26.8 0 01-7.8 19.2 25.72 25.72 0 01-8.48 5.59 27.8 27.8 0 01-10.51 2c-8.23 0-14.58-2.47-18.85-7.34s-6.5-11.58-6.5-19.85V22.7H67.49v64.86a58.58 58.58 0 002.73 18.33 40.92 40.92 0 008.12 14.44 36.77 36.77 0 0013.21 9.51 44.21 44.21 0 0017.68 3.37 42.05 42.05 0 0018.12-3.79 38.68 38.68 0 0012-8.78v10.1H158V22.7h-19.3zm109.63-55.89a36.94 36.94 0 00-13.21-9.51 44.36 44.36 0 00-17.69-3.4 41.22 41.22 0 00-18 3.91 39.83 39.83 0 00-12.07 8.87V22.7h-18.68v108H188V64.85a28.32 28.32 0 012-10.71 25.31 25.31 0 015.59-8.48 26.77 26.77 0 018.6-5.71A27.84 27.84 0 01215 37.86c8.21 0 14.51 2.56 18.73 7.64s6.41 11.76 6.41 19.77v65.47h19.07V65.88a59.63 59.63 0 00-2.73-18.43 41 41 0 00-8.15-14.54zm128.4 48.45a69.48 69.48 0 00-4.5-25.7 58.91 58.91 0 00-12.16-19.27 53 53 0 00-17.51-12.17A52 52 0 00322.19 20 50.52 50.52 0 00301 24.54a55.84 55.84 0 00-17.2 12.16 58 58 0 00-15.93 40.13 57.17 57.17 0 004.3 22.17 55 55 0 0029.24 29.77 54.12 54.12 0 0021.82 4.4c12.51 0 23.31-3.14 32.08-9.34s15.14-15.2 18.9-26.76l.37-1.13h-20.33l-.23.5a33 33 0 01-12 14.08c-5.13 3.34-11.46 5-18.82 5a34.94 34.94 0 01-23.47-9.06 37.9 37.9 0 01-8.27-10.8 38.65 38.65 0 01-4-13.49h89.27zm-88.09-16.55A36.2 36.2 0 01293.5 54a39.55 39.55 0 018.08-8.89 34.3 34.3 0 019.87-5.54 31.18 31.18 0 0121.69.1 33.68 33.68 0 019.75 5.74 38.88 38.88 0 017.78 9 40.54 40.54 0 014.65 10.43zM312.18 189.08a12.46 12.46 0 01-2.5 4.37 11 11 0 01-4.06 2.84 14.2 14.2 0 01-5.48 1 13 13 0 01-5.15-1 12.62 12.62 0 01-4.09-2.76 12.49 12.49 0 01-2.69-4.09 13 13 0 01-1-5.06h4.68a9.28 9.28 0 00.55 3.2 7.56 7.56 0 004.2 4.48 8.54 8.54 0 003.48.67q4.17 0 6.2-2.51a10.23 10.23 0 002-6.67V158H313v25.54a16.88 16.88 0 01-.82 5.54zM339.54 185.39l-4.12 11.23h-5.12L344.88 158h5.34l14.3 38.61h-5.29l-4.06-11.23zm7.9-21.59l-6.29 17.2h12.46zM388.22 196.62h-4.73V158h16.25a15 15 0 015.31.87 10.75 10.75 0 013.89 2.42 10.08 10.08 0 012.4 3.69 14.24 14.24 0 010 9.41 10.12 10.12 0 01-2.4 3.7 11 11 0 01-3.89 2.42 15.24 15.24 0 01-5.31.86h-11.52zm0-34.1v14.35h11.52a8.69 8.69 0 005.56-1.7c1.45-1.12 2.17-2.95 2.17-5.47s-.72-4.35-2.17-5.49a8.81 8.81 0 00-5.56-1.69zM434.71 185.39l-4.12 11.23h-5.12L440 158h5.34l14.31 38.61h-5.25l-4.06-11.23zm7.89-21.59l-6.28 17.2h12.46zM509.37 196.62h-5.23l-20.75-31.43v31.43h-4.73V158H484l20.75 31.38V158h4.67z">
+											</path>
 										</g>
 									</g>
 								</svg>
 							</a>
 						</div>
 						<div class="link_block_line">
-							<p>TuneCore</p>
+							<p>Download & Streaming</p>
 						</div>
 						<div class="link_block_exp">
 							<p>各楽曲配信サービスリンク</p>
@@ -699,6 +538,8 @@
 				</form>
 			</div>
 		</div>
+
+		<!-- メニュー -->
 		<div class="enter_wrap use_svh">
 			<div class="enter_open">
 				<div class="enter_open_edge"></div>
@@ -707,17 +548,7 @@
 				<span></span>
 			</div>
 			<div class="enter_wall use_svh"></div>
-			<!--
-			<div class="enter now" data-id="0" id="enter_id_0">
-				<div class="enter_bg"></div>
-				<div class="enter_bg_cover"></div>
-				<div class="enter_sq"></div>
-				<div class="enter_sq_core"></div>
-				<p class="big">Main</p>
-				<p class="mini">メイン</p>
-			</div>
-			-->
-			<div class="enter" data-id="1" id="enter_id_1">
+			<div class="enter" data-id="0" id="enter_id_0">
 				<div class="enter_bg"></div>
 				<div class="enter_bg_cover"></div>
 				<div class="enter_sq"></div>
@@ -725,37 +556,15 @@
 				<p class="big">About</p>
 				<p class="mini">私について</p>
 			</div>
-			<!--
-			<div class="enter" data-id="7" id="enter_id_7">
+			<div class="enter" data-id="1" id="enter_id_1">
 				<div class="enter_bg"></div>
 				<div class="enter_bg_cover"></div>
 				<div class="enter_sq"></div>
 				<div class="enter_sq_core"></div>
-				<p class="big">Art</p>
-				<p class="mini">アート</p>
+				<p class="big">Music</p>
+				<p class="mini">音楽</p>
 			</div>
-			-->
-			<!--
-			<div class="enter" data-id="3" id="enter_id_3">
-				<div class="enter_bg"></div>
-				<div class="enter_bg_cover"></div>
-				<div class="enter_sq"></div>
-				<div class="enter_sq_core"></div>
-				<p class="big">Content</p>
-				<p class="mini">コンテンツ</p>
-			</div>
-			-->
-			<!--
 			<div class="enter" data-id="2" id="enter_id_2">
-				<div class="enter_bg"></div>
-				<div class="enter_bg_cover"></div>
-				<div class="enter_sq"></div>
-				<div class="enter_sq_core"></div>
-				<p class="big">Live2D</p>
-				<p class="mini">Live2D&nbsp;モデル</p>
-			</div>
-			-->
-			<div class="enter" data-id="4" id="enter_id_4">
 				<div class="enter_bg"></div>
 				<div class="enter_bg_cover"></div>
 				<div class="enter_sq"></div>
@@ -763,17 +572,7 @@
 				<p class="big">Link</p>
 				<p class="mini">SNSなど</p>
 			</div>
-			<!--
-			<div class="enter" data-id="7" id="enter_id_7">
-				<div class="enter_bg"></div>
-				<div class="enter_bg_cover"></div>
-				<div class="enter_sq"></div>
-				<div class="enter_sq_core"></div>
-				<p class="big">Music</p>
-				<p class="mini">ミュージック</p>
-			</div>
-			-->
-			<div class="enter" data-id="5" id="enter_id_5">
+			<div class="enter" data-id="3" id="enter_id_3">
 				<div class="enter_bg"></div>
 				<div class="enter_bg_cover"></div>
 				<div class="enter_sq"></div>
@@ -781,7 +580,7 @@
 				<p class="big">Work</p>
 				<p class="mini">実績</p>
 			</div>
-			<div class="enter" data-id="6" id="enter_id_6">
+			<div class="enter" data-id="4" id="enter_id_4">
 				<div class="enter_bg"></div>
 				<div class="enter_bg_cover"></div>
 				<div class="enter_sq"></div>
@@ -789,7 +588,8 @@
 				<p class="big">Contact</p>
 				<p class="mini">お問い合わせ</p>
 			</div>
-			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+				data-show-count="false">Tweet</a>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 		<footer class="footer">

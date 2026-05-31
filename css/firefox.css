@@ -1,0 +1,17 @@
+@-moz-document url-prefix() {
+    .music_main_img {
+        border-radius: 2vw;
+    }
+
+    .dialog_music_sub {
+        border-radius: 2vw;
+    }
+
+    .dialog_music_sub_img_block {
+        border-radius: 2vw;
+    }
+
+    .link_block {
+        border-radius: 2vw;
+    }
+}
